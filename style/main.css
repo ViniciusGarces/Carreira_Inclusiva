@@ -1,3 +1,51 @@
-header .logo{
-    margin-left: 40px;
+header .conteiner{
+    display: flex;
 }
+
+header img{
+    height: 100px;
+}
+
+header .logo{
+    color: #0F729C;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.botoes{
+    position: fixed; /*Fixar a classe botoes na tela*/
+    top: 6%; /*Posicionar os botoes no meio vertical*/
+    right: 20px; /*Distância dos botoes da direita*/
+    transform: translateY(-50%); /*Ajustar o posicionamento dos botoes vertical*/
+    
+}
+
+.botao{
+    background-color: #0F729C; /*cor de fundo dos botoes*/
+    color: white; /*cor da letra dos botoes*/
+    border: none; /*remover a borda padrã*/
+    border-radius: 5px; /*arredondar os cantos*/
+
+    font-size: 20px; /*tamanho dos botoes*/
+    width: 150px; /*largura dos botoes*/
+    text-align: center; /*alinhamento central do texto*/
+    margin: 5px; /*espaçamento entre os botoes*/
+}
+
+.menu{
+    width: 1350px;
+    background-color: #60AC83;
+    height: 40px; 
+
+     
+     
+}
+
+
+.linha{
+    width: 1350px;
+    background-color: #E9BC1B;
+    height: 10px;
+}
+
