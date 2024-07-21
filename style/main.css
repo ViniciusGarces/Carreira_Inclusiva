@@ -17,7 +17,7 @@ header .logo{
 }
 
 .botoes{
-    position: fixed; /*Fixar a classe botoes na tela*/
+    position: absolute; /*Fixar a classe botoes na tela*/
     top: 6%; /*Posicionar os botoes no meio vertical*/
     right: 20px; /*Distância dos botoes da direita*/
     transform: translateY(-50%); /*Ajustar o posicionamento dos botoes vertical*/
@@ -80,7 +80,7 @@ nav{
     background-color: #0F729C;
     height: 400px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -90,7 +90,7 @@ main .conteiner{
 }
 
 .menu-pesquisa .conteiner{
-    width: 100%;
+    width: 97%;
     margin: 0 auto;
     margin-left: 40px;
 }
@@ -98,7 +98,7 @@ main .conteiner{
 .menu-pesquisa .tema{
     color: white;
     font-size: 40px;
-}
+} 
 
 .conteiner h2{
     margin-top: 20px;
@@ -112,6 +112,40 @@ main img{
 .borda-esquerda{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+}
+
+form{
+    width: 1000px;
+    margin-left: 30px;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+fieldset{
+    background-color: #296375;
+    border: none;
+    border-radius: 7px;
+    height: 50px;
+}
+
+#bloco_pesquisa{
+    display: flex;
+}
+
+#botao-form{
+    display: flex;
+}
+
+input[type='submit']{
+    background-color: #2FDF36;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 section{
@@ -156,17 +190,46 @@ h3{
     text-align: center;
 }
 
-.card-content button{
+input[type="submit"]{
     margin-left: 70px;
     background-color: #2FDF36;
+    color: white;
     width: 150px;
     height: 30px;
-    color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;  
 }
 
+.img-interativa{
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    max-width: 35%;
+    margin-left: 200px;
+}
 
+#empresa-inclusao{
+    background-color: #0F729C;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
 
+.titulo-empresa-inclusao .conteiner{
+    width: 97%;
+    margin: 0 auto;
+    margin-left: 40px;
+}
 
+.empresa-inclusao .titulo-empresa-inclusao{ 
+    color: white;
+    font-size: 40px;
+}
 
+.card-empresa{
+    background-color: #D9D9D9;
+    margin: 10px;
+    width: 25%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #CCC;
+}

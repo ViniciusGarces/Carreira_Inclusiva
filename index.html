@@ -41,8 +41,30 @@
             <div class="menu-pesquisa">
                 <div class="conteiner">
                     <h2 class="tema">Plataforma que oferta vagas de emprego para pessoas com deficência</h2>
+                    
                     <img src="img/imagem.jpg" alt="" srcset="" class="borda-esquerda">
                 </div>
+                
+                    <form>
+                        <fieldset>
+                            <div id="bloco_pesquisa">
+                                <div>
+                                    <label for="palavra chave">Pesquisar vagas por palavra chave</label>
+                                    <input id= "palavra chave" type="text" name="palavra chave" placeholder="Ex. Financeiro">
+                                </div>
+
+                                <div>
+                                    <label for="localizacao">Pesquisar vagas por localização</label>
+                                    <input id= "localizacao" type="text" name="localizacao" placeholder="Ex.Taquatinga">
+                                </div>
+
+                                <div id="botao-form">
+                                    <input type="submit" name="bt-pesquisar" value="PESQUISAR"/>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+               
              </div>
         </main>
 
@@ -53,7 +75,9 @@
                     <div class="card-content">
                         <h3>Pesquisar vagas inclusivas</h3>
                         <p>Pesquisar vagas disponíveis para pessoas com deficiência </p>
-                        <button type="button">PESQUISAR</button>
+                        <div id="botao-card">
+                            <input type="submit" name="bt-pesquisar" value="PESQUISAR"/>
+                        </div>
                     </div>
                 </div>
 
@@ -62,7 +86,9 @@
                     <div class="card-content">
                         <h3>Pesquisar vagas inclusivas</h3>
                         <p>Pesquisar vagas disponíveis para pessoas com deficiência </p>
-                        <button type="button">GERAR ALERTAS</button>
+                        <div id="botao-card">
+                            <input type="submit" name="bt-gerar_alertas" value="GERAR ALERTAS"/>
+                        </div>
                     </div>
                 </div>
 
@@ -71,13 +97,49 @@
                     <div class="card-content">
                         <h3>Pesquisar vagas inclusivas</h3>
                         <p>Pesquisar vagas disponíveis para pessoas com deficiência </p>
-                        <button type="button">UPLOAD CV</button>
+                        <div id="botao-card">
+                            <input type="submit" name="bt-upload_cv" value="UPLOAD CV"/>
+                        </div>
                     </div>
+                </div>
+                <div class="img-interativa">
+                    <img src="img/acessibilidade.png" alt="" >
+                    <img src="img/libras.png" alt="" >
                 </div>
             </div>
         </section>
 
          <!--linha para separar os blocos-->
          <div class="linha"></div>
+
+         <section id="empresa-inclusao">
+            <div class="empresa-inclusao">
+                <div class="conteiner-empresa">
+                    <h2 class="titulo-empresa-inclusao">Algumas empresas comprometidas com a inclusão</h2>
+                    
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="card-content">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="card-content">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="card-content">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="card-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
     </body>
 </html>
