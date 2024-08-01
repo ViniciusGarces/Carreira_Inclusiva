@@ -331,6 +331,7 @@ footer{
 
 .checkbox-container label{
     margin-right: 1900px;
+    white-space: nowrap;
     color: black;
 }
 
@@ -357,4 +358,94 @@ footer{
     flex-direction: column;
     gap: 130px;
     margin-left: 150px;
+}
+
+/*pagina de criar conta*/
+#criar-conta{
+
+}
+
+section .criar-conta{
+    display: flex;
+    padding: 40px;
+    margin-left: 60px;
+}
+
+.card_criar-conta{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 20px;
+    height: 700px;
+}
+
+.criar-conta h1{
+    text-align: center;
+    font-size: 54px;
+    color: #0F729C;
+}
+.criar-conta p{
+    color: #454545;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.criar-conta .p{
+    font-size: 15px;
+}
+
+.grupo-form{
+    padding: 5px;
+    flex-direction: column;
+    display: flex;
+}
+
+.grupo-form-container{
+    display: flex;
+    gap: 20px;
+}
+
+.grupo-form label{
+    font-size: 20px;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.grupo-form input[type="text"], .grupo-form input[type="email"], .grupo-form input[type="password"]{
+    width: 400px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.grupo-form input[type="email"]{
+    width: 830px;
+}
+
+.checkbox-grupo-form{
+    display: flex;
+    padding-top: 10px;
+    margin-right: 850px;
+}
+
+.checkbox-grupo-form input[type="checkbox"]{
+    height: 20px;
+}
+
+.checkbox-grupo-form label{
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.card_criar-conta button{
+    background-color: #2FDF36;
+    color: white;
+    padding:  10px 40px;
+    margin-left: 400px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20%;
 }

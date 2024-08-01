@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--autores do site-->
+        <meta name="author" content="Tiago Lino e Vinícuis Garces"/>
+        <!--palavras chaves ao realizar pesquisa para encontrar no site-->
+        <meta name="Kwywords" contente="Carreira, Inclusão, Vagas de Emprego"/>
+        <meta name="descreption" content="Site de vagas de emprego exluiva para pessoas com deficiência no Distrito Federal"/>
+        
+        <link rel="stylesheet" href="style/main.css">
+
+        <title>Carreira Inclusiva</title>
+    </head>
+    <body>
+        <header>
+            <div class="conteiner">
+                <img src="img/logo.png" alt="" srcset="">
+                <h1 class = "logo">Carreira Inclusiva </h1>
+                <div class="botoes">
+                    <a href="login.html"><button type="submit" class="botao">Login</button></a>
+                    <button type="submit" class="botao">Cadastre-se</button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a class="a-menu" href="index.html">Home</a>
+                    <a class="a-menu" href="#">Encontre uma Vaga</a>
+                    <a class="a-menu" href="#">Alertas de Vagas</a>
+                    <a href="#">Mapa do Site</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--linha para separar os blocos-->
+        <div class="linha"></div>
+
+        <!--Sessão de criar conta-->
+        <section  >
+            <div class="criar-conta">
+                <div class="card_criar-conta">
+                    <h1>Criar Conta</h1>
+                    <p>Crie uma conta para acessar e candidatar as vagas :</p>
+                    <p class="p">Campos com (<span style="color: red;">*</span>) são obrigatórios</p><!--utilizado a tag span para alterar a cor apenas do asterisco-->
+
+                    <form action="#" method="post">
+                        <div class="grupo-form-container">
+                            <div class="grupo-form">
+                                <label for="sobrenome">Nome <span style="color: red;">*</span></label>
+                                <input type="text" id="Nome" name="Nome" required>
+                            </div>
+                            <div class="grupo-form">
+                                <label for="Nome">Sobrenome <span style="color: red;">*</span></label>
+                                <input type="text" id="sobrenome" name="sobrenome" required>
+                            </div>
+                        </div>
+                        <div class="grupo-form-container">
+                            <div class="grupo-form">
+                                <label for="cargo">Cargo Pretendido </label>
+                                <input type="text" id="cargo" name="cargo">
+                            </div>
+                            <div class="grupo-form">
+                                <label for="cep">CEP </label>
+                                <input type="text" id="cep" name="cep">
+                            </div>
+                        </div>
+                        <div class="grupo-form">
+                            <label for="email">Email <span style="color: red;">*</span></label>
+                            <input placeholder="exemplo@gmail.com" type="email" id="email" name="email" required>
+                        </div>
+                        <div class="grupo-form">
+                            <label for="Senha">Senha <span style="color: red;">*</span></label>
+                            <input type="password" id="Senha" name="Senha" required>
+                        </div>
+                        <div class="grupo-form">
+                            <label for="confirmar-senha">Confirmar Senha <span style="color: red;">*</span></label>
+                            <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+                        </div>
+                        <div class="checkbox-grupo-form">
+                            <input type="checkbox" id="aceitar" name="aceitar" required>
+                            <label for="aceitar">Li e aceito as <a href="#">Condições Legais</a>  e <a href="#">Política de Privacidade</a></label>
+                        </div>
+                        <button>CADASTRE-SE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+         <footer class="footer">
+            <div class="footer-content">
+                <p class="copyright"> © 2024 Copyright: Carreira Inclusiva</p>
+                <div class="social-logo">
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img class="img-icone" src="img/logo-facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="img-icone" src="img/logo-instagram.png" alt=""></a>
+                    <a href="https://br.linkedin.com/" target="_blank"><img class="img-icone" src="img/logo-linkedin.png" alt=""></a>
+                </div>
+            </div>
+         </footer>
+
+    </body>
+</html>
