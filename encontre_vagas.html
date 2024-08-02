@@ -19,52 +19,38 @@
                 <img src="img/logo.png" alt="" srcset="">
                 <h1 class = "logo">Carreira Inclusiva </h1>
                 <div class="botoes">
-                    <button type="submit" class="botao">Login</button>
-                    <a href="criar_conta.html"><button type="submit" class="botao">Cadastre-se</button></a>
+                    <a href="login.html"><button type="submit" class="botao">Login</button></a>
+                    <button type="submit" class="botao">Cadastre-se</button>
                 </div>
             </div>
 
             <div class="menu">
                 <nav>
                     <a class="a-menu" href="index.html">Home</a>
-                    <a class="a-menu" href="encontre_vagas.html">Encontre uma Vaga</a>
+                    <a class="a-menu" href="#">Encontre uma Vaga</a>
                     <a class="a-menu" href="#">Alertas de Vagas</a>
                     <a href="#">Mapa do Site</a>
                 </nav>
             </div>
-        </header>
+        </header>   
 
         <!--linha para separar os blocos-->
         <div class="linha"></div>
-        <!-- Seção de login -->
-        <section id="pag-login">
-            <div class="login-container">
-                <!-- Formulário de login -->
-                <form class="login-form">
-                    <h2>Login</h2>
-                    <!-- Campo de entrada para email -->
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <!-- Campo de entrada para senha -->
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" required>
-                    <!-- Checkbox para manter conectado -->
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember">manter conectado</label>
-                    </div>
-                    <!-- Botão de submissão do formulário -->
-                    <button type="submit">LOGAR</button>
-                    <!-- Link para recuperação de senha -->
-                    <a href="#" class="forgot-password">Esqueceu sua senha?</a>
-                </form>
+
+        <section>
+            <p>XX Vagas</p>
+            <div class="encontre_vagas">
+                <div class="card-pesquisa">
+                    <p>Pesquise por palavra chave</p>
+                    <input placeholder="ex. auxiliar administrativo" type="text" id="palavra-chave" name="palavra-chave" required>
+                    <button type="submit">Pesquisar</button>
+                </div>
             </div>
-            <!-- Imagens interativas -->
-            <div class="imgs-interativa">
+            <!--
+            <div class="imgns-interativa">
                 <img src="img/acessibilidade.png" alt="" >
                 <img src="img/libras.png" alt="" >
-            </div>
-
+            </div>-->   
         </section>
 
          <footer class="footer">
