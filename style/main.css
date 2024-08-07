@@ -182,8 +182,9 @@ section .conteiner{
 }
 /* Estilo para os parágrafos dentro da classe card-content */
 .card-content p{
-    line-height: 20px;
-    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
 h3{
@@ -380,7 +381,7 @@ section .criar-conta{
     border-radius: 20px;
     padding: 10px auto;
     margin-left: 100px;
-    height: 700px;
+    height: 750px;
     width: 900px;
 }
 /* Estilo para os elementos h1 dentro da classe criar-conta */
@@ -470,13 +471,12 @@ section .criar-conta{
 #encontre_vagas{
 
 }
-
-section {
-    padding-bottom: 400px;
+#vagas{
+    padding-bottom: 10px;
     flex-direction: column;
 }
 
-section p{
+section h2{
     font-size: 20px;
     font-weight: bold;
     margin-left: 45px;
@@ -485,24 +485,32 @@ section p{
 
 section .encontre_vagas{
     display: flex;
+    flex-direction: row;
 }
 
 .card-pesquisa{
     background-color: #D9D9D9;
     margin-left: 45px;
     margin-top: 20px;
-    width: 250px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
 }
 
-.card-pesquisa p{
-    margin-left: 5px;
+.card-pesquisa h3{
     margin-top: 5px;
+    font-weight: bold;
 }
+
+.card-pesquisa .h3-texto{
+    margin-right: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
 
 .card-pesquisa input{
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 6px;
     padding: 4px;
     border: 1px solid #ccc;
     width: 95%;
@@ -511,7 +519,42 @@ section .encontre_vagas{
 .card-pesquisa button{
     background-color: #2FDF36;
     margin-top: 5px;
-    margin-left: 163px;
+    margin-left: 147px;
     border: none;
     padding: 10px;
 }
+
+.topicos{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.topicos img{
+    margin-left: 10px;
+    height: 20px;
+}
+
+.conteiner-vagas{
+    width: 100%;
+}
+
+.vagas-content{
+    background-color: #D9D9D9;
+    height: 300px;
+    width: 800px;
+    margin-left: 50px; 
+    margin-top: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.imgss-interativa{
+    display: flex;
+    flex-direction: column;
+    gap: 170px; 
+    margin-left: 110px;
+    margin-top: 100px;
+}
+
