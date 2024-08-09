@@ -558,3 +558,42 @@ section .encontre_vagas{
     margin-top: 100px;
 }
 
+#gerar_alertas{
+
+}
+
+section .gerar-alertas{
+    display: flex;
+    padding: 40px;
+    margin-left: 60px;
+}
+
+.card_gerar-alertas{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px auto;
+    margin-left: 100px;
+    height: 750px;
+    width: 900px;
+}
+
+.gerar-alertas h1{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 54px;
+    color: #0F729C;
+}
+
+.gerar-alertas h3{
+    color: #454545;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 350px;
+}
+
+.gerar-alertas p{
+    color: #454545;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 55px;
+}
