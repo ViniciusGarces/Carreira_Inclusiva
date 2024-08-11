@@ -346,6 +346,259 @@ footer{
     font-weight: bold;
     cursor: pointer;
     width: 20%;
+<<<<<<< HEAD
+=======
+}
+/* Estilo para a classe forgot-password */
+.forgot-password{
+    margin-top: 20px;
+    margin-left: 400px;
+    color: #0F729C;
+}
+
+.imgs-interativa{
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    margin-left: 150px;
+}
+
+/*pagina de criar conta*/
+#criar-conta{
+
+}
+/* Estilo para o elemento section */
+section{
+    display: flex;
+}
+/* Estilo para o elemento com a classe criar-conta dentro do section */
+section .criar-conta{
+    display: flex;
+    padding: 40px;
+    margin-left: 60px;
+}
+/* Estilo para a classe card_criar-conta */
+.card_criar-conta{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px auto;
+    margin-left: 100px;
+    height: 750px;
+    width: 900px;
+}
+/* Estilo para os elementos h1 dentro da classe criar-conta */
+.criar-conta h1{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 54px;
+    color: #0F729C;
+}
+/* Estilo para os parágrafos dentro da classe criar-conta */
+.criar-conta p{
+    color: #454545;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 30px;
+}
+/* Estilo para os elementos com a classe p dentro da classe criar-conta */
+.criar-conta .p{
+    font-size: 15px;
+}
+/* Estilo para a classe grupo-form */
+.grupo-form{
+    padding: 5px;
+    flex-direction: column;
+    display: flex;
+}
+/* Estilo para a classe grupo-form-container */
+.grupo-form-container{
+    display: flex;
+    gap: 20px;
+}
+/* Estilo para os elementos label dentro da classe grupo-form */
+.grupo-form label{
+    font-size: 20px;
+    padding: 10px;
+    margin-left: -10px;
+    font-weight: bold;
+}
+/* Estilo para os inputs de texto, email e senha dentro da classe grupo-form */
+.grupo-form input[type="text"], .grupo-form input[type="email"], .grupo-form input[type="password"]{
+    width: 400px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.grupo-form input[type="email"]{
+    width: 830px;
+}
+/* Estilo para a classe checkbox-grupo-form */
+.checkbox-grupo-form{
+    display: flex;
+    padding-top: 10px;
+    margin-right: 590px;
+}
+/* Estilo para os inputs de checkbox dentro da classe checkbox-grupo-form */
+.checkbox-grupo-form input[type="checkbox"]{
+    height: 15px;
+}
+/* Estilo para os labels dentro da classe checkbox-grupo-form */
+.checkbox-grupo-form label{
+    margin-left: 5px;
+    white-space: nowrap;
+}
+/* Estilo para os botões dentro da classe card_criar-conta */
+.card_criar-conta button{
+    background-color: #2FDF36;
+    color: white;
+    padding:  10px 40px;
+    margin-left: 270px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;/* Altera o cursor para um ponteiro ao passar o mouse sobre o botão */
+    width: 30%;
+}
+/* Estilo para a classe imgns-interativa */ 
+.imgns-interativa{
+    display: flex;
+    flex-direction: column;
+    gap: 170px; 
+    margin-left: 110px;
+    margin-top: 100px;
+}
+
+#encontre_vagas{
+
+}
+#vagas{
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+
+section h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+section .encontre_vagas{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-pesquisa{
+    background-color: #D9D9D9;
+    margin-left: 45px;
+    margin-top: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+.card-pesquisa h3{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.card-pesquisa .h3-texto{
+    margin-right: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+
+.card-pesquisa input{
+    margin-top: 5px;
+    margin-left: 6px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    width: 95%;
+}
+
+.card-pesquisa button{
+    background-color: #2FDF36;
+    margin-top: 5px;
+    margin-left: 147px;
+    border: none;
+    padding: 10px;
+}
+
+.topicos{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.topicos img{
+    margin-left: 10px;
+    height: 20px;
+}
+
+.conteiner-vagas{
+    width: 100%;
+}
+
+.vagas-content{
+    background-color: #D9D9D9;
+    height: 300px;
+    width: 800px;
+    margin-left: 50px; 
+    margin-top: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.imgss-interativa{
+    display: flex;
+    flex-direction: column;
+    gap: 170px; 
+    margin-left: 110px;
+    margin-top: 100px;
+}
+
+#gerar_alertas{
+
+}
+
+section .gerar-alertas{
+    display: flex;
+    padding: 40px;
+    margin-left: 60px;
+}
+
+.card_gerar-alertas{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px auto;
+    margin-left: 100px;
+    height: 750px;
+    width: 900px;
+}
+
+.gerar-alertas h1{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 54px;
+    color: #0F729C;
+}
+
+.gerar-alertas h3{
+    color: #454545;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 350px;
+}
+
+.gerar-alertas p{
+    color: #454545;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 55px;
+>>>>>>> 3f9a2630f99e2f18ee3d30c9badd799f0296d39c
 }
 /* Estilo para a classe forgot-password */
 .forgot-password{
