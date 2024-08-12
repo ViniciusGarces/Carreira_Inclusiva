@@ -598,7 +598,6 @@ section .gerar-alertas{
     font-size: 15px;
     margin-top: 5px;
     margin-left: 55px;
->>>>>>> 3f9a2630f99e2f18ee3d30c9badd799f0296d39c
 }
 /* Estilo para a classe forgot-password */
 .forgot-password{
@@ -717,7 +716,7 @@ section .criar-conta{
     display: flex;
     flex-direction: column;
     gap: 170px; 
-    margin-left: 110px;
+    margin-left: 120px;
     margin-top: 100px;
 }
 
@@ -928,3 +927,75 @@ section .gerar-alertas{
     border-radius: 10px;
     margin-left: 330px;
 }   
+
+#curriculo{
+
+}
+
+section .curriculo{
+    display: flex;
+    margin-left: 60px;
+}
+
+.card_curriculo{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin-left: 210px;
+    margin-top: 70px;
+    height: 650px;
+    width: 800px;
+}
+
+/* Estilo para os elementos h1 dentro da classe curriculo */
+.curriculo h1{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 54px;
+    color: #0F729C;
+}
+
+.curriculo h3{
+    color: #454545;
+    font-size: 20px;
+    margin-right: 350px;
+    margin-top: 15px;
+}
+
+.curriculo p{
+    color: #454545;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.arquivos{
+    background-color: white;
+    width: 600px;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.arquivos input[type="file"] {
+    margin-top: 13px;   
+    margin-left: 20px;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.curriculo .tipo_doc{
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: #454545;
+}
+
+.card_curriculo button{
+    background-color: #2FDF36;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 520px;
+    margin-top: 10px;
+}
