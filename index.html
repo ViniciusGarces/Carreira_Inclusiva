@@ -45,23 +45,23 @@
                     <img src="img/imagem.jpg" alt="" srcset="" class="borda-esquerda">
                 </div>
                     <!-- Formulário de pesquisa de vagas -->
-                    <form>
+                    <form action="encontre_vagas.html" method="get" target="_blank">
                         <fieldset>
                             <!-- Bloco de pesquisa -->
-                            <div id="bloco_pesquisa">
+                            <div class="bloco_pesquisa">
                                 <!-- Campo de pesquisa por palavra-chave -->
-                                <div>
+                                <div class="tipo_pesquisa">
                                     <label for="palavra chave">Pesquisar vagas por palavra chave</label>
                                     <input id= "palavra chave" type="text" name="palavra chave" placeholder="Ex. Financeiro">
                                 </div>
                                 <!-- Campo de pesquisa por localização -->
-                                <div>
+                                <div class="tipo_pesquisa">
                                     <label for="localizacao">Pesquisar vagas por localização</label>
                                     <input id= "localizacao" type="text" name="localizacao" placeholder="Ex.Taquatinga">
                                 </div>
-                                <!-- Botão de submissão da pesquisa -->
-                                <div id="botao-form">
-                                    <input type="submit" name="bt-pesquisar" value="PESQUISAR"/>
+                                <div class="btn-pesquisa">
+                                    <!-- Botão de submissão da pesquisa -->
+                                    <button type="submit">PESQUISA</button>
                                 </div>
                             </div>
                         </fieldset>
@@ -79,7 +79,7 @@
                         <h3>Pesquisar vagas inclusivas</h3>
                         <p>Pesquisar vagas disponíveis para pessoas com deficiência</p>
                         <div id="botao-card">
-                            <input type="submit" name="bt-pesquisar" value="PESQUISAR"/>
+                            <a href="encontre_vagas.html"><input type="submit" name="bt-pesquisar" value="PESQUISAR"/></a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                         <h3>Gerar alertas de vagas</h3>
                         <p>Cadastre-se e recebe por email vagas que masi combinam com o seu perfil</p>
                         <div id="botao-card">
-                            <input type="submit" name="bt-gerar_alertas" value="GERAR ALERTAS"/>
+                            <a href="gerar_alertas.html"><input type="submit" name="bt-gerar_alertas" value="GERAR ALERTAS"/></a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         <h3>Upload do currículo</h3>
                         <p>Faça upload do seu currículo para combinar com as melhores vagas</p>
                         <div id="botao-card">
-                            <input type="submit" name="bt-upload_cv" value="UPLOAD CV"/>
+                            <a href="curriculo.html"><input type="submit" name="bt-upload_cv" value="UPLOAD CV"/></a>
                         </div>
                     </div>
                 </div>

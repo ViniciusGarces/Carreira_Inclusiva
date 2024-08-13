@@ -30,6 +30,7 @@ header .logo{
     color: white; /*cor da letra dos botoes*/
     border: none; /*remover a borda padrã*/
     border-radius: 5px; /*arredondar os cantos*/
+    padding: 10px;
 
     font-size: 20px; /*tamanho dos botoes*/
     width: 150px; /*largura dos botoes*/
@@ -118,35 +119,57 @@ form{
     width: 1000px;
     margin-left: 30px;
 }
-/* Estilo para todos os elementos input */
-input{
-    width: 100%;
-    box-sizing: border-box;/* Inclui o padding e a borda na largura total do elemento */
-}
+
 /* Estilo para todos os elementos fieldset */
 fieldset{
-    background-color: #296375;
     border: none;/* Remove a borda padrão do fieldset */
     border-radius: 7px;
-    height: 50px;
+    margin-left: 20px;
+    height: 120px;
+    position: absolute;
+    top: 55%;
+    background-color: rgba(41, 99, 117); /* Fundo semi-transparente */
+    width: 1000px;
 }
 /* Estilo para o elemento com id bloco_pesquisa */
-#bloco_pesquisa{
+.bloco_pesquisa{
     display: flex;
+    gap: 10px;
+    margin-left: 40px;
 }
-/* Estilo para o elemento com id botao-form */
-#botao-form{
+
+/* Estilo para a classe grupo-form */
+.tipo_pesquisa{
+    padding: 5px;
+    margin-top: 20px;
+    flex-direction: column;
     display: flex;
+    gap: 10px;
 }
-/* Estilo para os elementos input do tipo submit */
-input[type='submit']{
+
+.tipo_pesquisa label{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.tipo_pesquisa input[type="text"]{
+    width: 350px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.btn-pesquisa button{ 
     background-color: #2FDF36;
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+    margin-top: 55px;
     border: none;
     border-radius: 10px;
-    width: 150px;
-    margin-top: 5px;
-    margin-left: 5px;
 }
+
 /* Estilo para o elemento section */
 section{
     background-color: white;
@@ -935,6 +958,7 @@ section .gerar-alertas{
 section .curriculo{
     display: flex;
     margin-left: 60px;
+    padding-bottom: 50px;
 }
 
 .card_curriculo{
@@ -942,7 +966,7 @@ section .curriculo{
     border-radius: 20px;
     margin-left: 210px;
     margin-top: 70px;
-    height: 650px;
+    height: 350px;
     width: 800px;
 }
 
