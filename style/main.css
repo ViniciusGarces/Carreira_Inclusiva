@@ -292,205 +292,80 @@ footer{
 #pag-login{
 
 }
-#pag-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.login{
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
-/* Estilo para a classe login-container */
-.login-container{
+
+ .login-container{
     background-color: #D9D9D9;
-    margin-top: 100px;
+    height: 500px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
     border-radius: 20px;
-    height:400px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    width: 700px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 30px;
-}
-/* Estilo para a classe login-form */
-.login-form{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-}
-/* Estilo para os elementos h2 dentro da classe login-form */
-.login-form h2{
-    color: #0F729C;
-    font-weight: bold;
-    font-size: 50px;
-    margin-bottom: 20px;
-    margin-left: 250px;
-}
-/* Estilo para os elementos label dentro da classe login-form */
-.login-form label{
-    margin-bottom: 5px;
-    margin-left: 50px;
-    color: black;
-    display: block;
-}
-/* Estilo para os elementos input do tipo email e password dentro da classe login-form */
-.login-form input[type="email"], .login-form input[type="password"]{
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 15px;
-    margin-left: 50px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-/* Estilo para a classe checkbox-container */
-.checkbox-container{
-    display: flex;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    align-items: center;
-}
-/* Estilo para os elementos input do tipo checkbox dentro da classe checkbox-container */
-.checkbox-container input[type="checkbox"]{
-    margin-left: 5px;
-}
-/* Estilo para os elementos label dentro da classe checkbox-container */
-.checkbox-container label{
-    margin-right: 1900px;
-    white-space: nowrap;/* Impede que o texto do label quebre para a próxima linha */
-    color: black;
-}
-/* Estilo para os botões dentro da classe login-form */
-.login-form button{
-    background-color: #2FDF36;
-    color: white;
-    padding:  10px 20px;
-    margin-left: 200px;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 20%;
-<<<<<<< HEAD
-=======
-}
-/* Estilo para a classe forgot-password */
-.forgot-password{
-    margin-top: 20px;
-    margin-left: 400px;
-    color: #0F729C;
+    
 }
 
-.imgs-interativa{
-    display: flex;
-    flex-direction: column;
-    gap: 130px;
-    margin-left: 150px;
-}
-
-/*pagina de criar conta*/
-#criar-conta{
-
-}
-/* Estilo para o elemento section */
-section{
-    display: flex;
-}
-/* Estilo para o elemento com a classe criar-conta dentro do section */
-section .criar-conta{
-    display: flex;
-    padding: 40px;
-    margin-left: 60px;
-}
-/* Estilo para a classe card_criar-conta */
-.card_criar-conta{
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    padding: 10px auto;
-    margin-left: 100px;
-    height: 750px;
-    width: 900px;
-}
-/* Estilo para os elementos h1 dentro da classe criar-conta */
-.criar-conta h1{
+.login-container h2{
     padding-top: 20px;
     text-align: center;
     font-size: 54px;
     color: #0F729C;
 }
-/* Estilo para os parágrafos dentro da classe criar-conta */
-.criar-conta p{
-    color: #454545;
-    font-size: 20px;
-    padding: 5px;
-    margin-left: 30px;
-}
-/* Estilo para os elementos com a classe p dentro da classe criar-conta */
-.criar-conta .p{
-    font-size: 15px;
-}
-/* Estilo para a classe grupo-form */
-.grupo-form{
-    padding: 5px;
+
+.form-login{
+    display: flex;
     flex-direction: column;
-    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 15px;
 }
-/* Estilo para a classe grupo-form-container */
-.grupo-form-container{
-    display: flex;
-    gap: 20px;
-}
-/* Estilo para os elementos label dentro da classe grupo-form */
-.grupo-form label{
+
+.form-login label{
     font-size: 20px;
-    padding: 10px;
-    margin-left: -10px;
     font-weight: bold;
+    margin-right: 170px;
+    margin-left: -400px;
 }
-/* Estilo para os inputs de texto, email e senha dentro da classe grupo-form */
-.grupo-form input[type="text"], .grupo-form input[type="email"], .grupo-form input[type="password"]{
+}
+
+.form-login input[type="email"], input[type="password"]{
     width: 400px;
     padding: 8px 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    margin-left: -400px;
 }
 
-.grupo-form input[type="email"]{
-    width: 830px;
+.checkbox-container{
+    margin-left: 120px;
 }
-/* Estilo para a classe checkbox-grupo-form */
-.checkbox-grupo-form{
-    display: flex;
-    padding-top: 10px;
-    margin-right: 590px;
-}
-/* Estilo para os inputs de checkbox dentro da classe checkbox-grupo-form */
-.checkbox-grupo-form input[type="checkbox"]{
-    height: 15px;
-}
-/* Estilo para os labels dentro da classe checkbox-grupo-form */
-.checkbox-grupo-form label{
-    margin-left: 5px;
-    white-space: nowrap;
-}
-/* Estilo para os botões dentro da classe card_criar-conta */
-.card_criar-conta button{
+
+.login-container button{
     background-color: #2FDF36;
     color: white;
-    padding:  10px 40px;
-    margin-left: 270px;
+    padding: 10px 40px;
+    width: 250px;
+    margin-left: 380px;
     margin-top: 20px;
     border: none;
     border-radius: 10px;
     font-weight: bold;
-    cursor: pointer;/* Altera o cursor para um ponteiro ao passar o mouse sobre o botão */
-    width: 30%;
+    cursor: pointer;
 }
-/* Estilo para a classe imgns-interativa */ 
-.imgns-interativa{
+
+.login-container a{
     display: flex;
-    flex-direction: column;
-    gap: 170px; 
-    margin-left: 110px;
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-left: 575px;
+}
+
+/* Estilo para a classe imgns-interativa */ 
+.imgs-interativa{
+    margin-top: 150px;
 }
 
 #encontre_vagas{
