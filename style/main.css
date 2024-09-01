@@ -319,12 +319,12 @@ footer{
 .card-login{
     background-color: #D9D9D9;
     height: 400px;
-    width: 600px;
+    width: 500px;
     margin-top: 40px;
     border-radius: 20px;
 }
 
-.conteiner-login h2{
+.card-login h2{
     color: #0F729C;
     text-align: center;
     font-size: 54px;
@@ -334,30 +334,23 @@ footer{
 .login-form{
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 0;
     width: 100%;
 }
-/* Estilo para os elementos h2 dentro da classe login-form */
-.login-form h2{
-    color: #0F729C;
-    font-weight: bold;
-    font-size: 50px;
-    margin-bottom: 20px;
-    margin-left: 250px;
-}
+
 /* Estilo para os elementos label dentro da classe login-form */
 .login-form label{
     margin-bottom: 5px;
-    margin-left: 50px;
+    margin-left: 60px;
     color: black;
     display: block;
 }
 /* Estilo para os elementos input do tipo email e password dentro da classe login-form */
 .login-form input[type="email"], .login-form input[type="password"]{
-    width: 50%;
+    width: 70%;
     padding: 10px;
     margin-bottom: 15px;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -366,17 +359,16 @@ footer{
 .checkbox-container{
     display: flex;
     margin-bottom: 20px;
-    margin-left: 50px;
-    align-items: center;
 }
 /* Estilo para os elementos input do tipo checkbox dentro da classe checkbox-container */
 .checkbox-container input[type="checkbox"]{
-    margin-left: 5px;
+    margin-left: 60px;
 }
 /* Estilo para os elementos label dentro da classe checkbox-container */
 .checkbox-container label{
-    margin-right: 1900px;
     white-space: nowrap;/* Impede que o texto do label quebre para a próxima linha */
+    margin-left: 5px;
+    margin-top: 4px;
     color: black;
 }
 /* Estilo para os botões dentro da classe login-form */
@@ -384,18 +376,25 @@ footer{
     background-color: #2FDF36;
     color: white;
     padding:  10px 20px;
-    margin-left: 200px;
+    margin-left: 120px;
     border: none;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-    width: 20%;
+    width: 50%;
 }
 /* Estilo para a classe forgot-password */
 .forgot-password{
-    margin-top: 20px;
-    margin-left: 400px;
+    margin-bottom: -200px;
+    margin-right: 50px;
+
+}
+
+.forgot-password a{
     color: #0F729C;
+    margin-left: -110px;
+    white-space: nowrap;
+    margin-top: -2px;
 }
 
 .conteiner-imagens_interativas{
