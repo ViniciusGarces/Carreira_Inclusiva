@@ -353,7 +353,7 @@ footer{
     margin-left: 60px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 /* Estilo para a classe checkbox-container */
 .checkbox-container{
@@ -384,27 +384,38 @@ footer{
     width: 50%;
 }
 /* Estilo para a classe forgot-password */
-.forgot-password{
-    margin-bottom: -200px;
-    margin-right: 50px;
-
+ .forgot-password{
+    width: 100px;
+    height: 30px;
 }
 
 .forgot-password a{
+    margin-left: -100px;
     color: #0F729C;
-    margin-left: -110px;
+    font-size: 15px;
+    text-decoration: none;
     white-space: nowrap;
-    margin-top: -2px;
 }
 
 .conteiner-imagens_interativas{
-    background-color: blue;
     width: 100px;
     position: absolute; /* Posicionamento absoluto */
     right: 0; /* Alinha à direita */
-    top: 50%; /* Centraliza verticalmente */
+    top: 60%; /* Centraliza verticalmente */
     transform: translateY(-50%); /* Ajusta a centralização vertical */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
+
+.conteiner-imagens_interativas img{
+    height: 45px;
+    width: 45px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
 
 #gerar_alertas{
 
@@ -746,7 +757,7 @@ section .gerar-alertas{
     text-align: left;
 }
 
-.container-opcoes{
+*.container-opcoes{
     background-color: white;
     margin-top: 10px;
     margin-left: 20px;
