@@ -416,73 +416,18 @@ footer{
     margin-top: 40px;
 }
 
-
-#gerar_alertas{
-
-}
-
-section .gerar-alertas{
-    display: flex;
-    padding: 40px;
-    margin-left: 60px;
-}
-
-.card_gerar-alertas{
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    padding: 10px auto;
-    margin-left: 100px;
-    height: 750px;
-    width: 900px;
-}
-
-.gerar-alertas h1{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 54px;
-    color: #0F729C;
-}
-
-.gerar-alertas h3{
-    color: #454545;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-right: 350px;
-}
-
-.gerar-alertas p{
-    color: #454545;
-    font-size: 15px;
-    margin-top: 5px;
-    margin-left: 55px;
-}
-/* Estilo para a classe forgot-password */
-.forgot-password{
-    margin-top: 20px;
-    margin-left: 400px;
-    color: #0F729C;
-}
-
-.imgs-interativa{
-    display: flex;
-    flex-direction: column;
-    gap: 130px;
-    margin-left: 150px;
-}
-
 /*pagina de criar conta*/
 #criar-conta{
 
 }
 /* Estilo para o elemento section */
-section{
+.sessao-criar_conta{
     display: flex;
-}
-/* Estilo para o elemento com a classe criar-conta dentro do section */
-section .criar-conta{
-    display: flex;
-    padding: 40px;
-    margin-left: 60px;
+    width: 100%;
+    height: 800px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 /* Estilo para a classe card_criar-conta */
 .card_criar-conta{
@@ -576,27 +521,24 @@ section .criar-conta{
     cursor: pointer;/* Altera o cursor para um ponteiro ao passar o mouse sobre o botão */
     width: 30%;
 }
-/* Estilo para a classe imgns-interativa */ 
-.imgns-interativa{
-    display: flex;
-    flex-direction: column;
-    gap: 170px; 
-    margin-left: 120px;
-    margin-top: 100px;
-}
 
 #encontre_vagas{
 
 }
-#vagas{
-    padding-bottom: 10px;
+
+.sessao-encontre_vagas{
+    display: flex;
+    width: 95%;
+    height: 1000px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-section h2{
+.sessao-encontre_vagas h2{
     font-size: 20px;
     font-weight: bold;
-    margin-left: 45px;
+    margin-left: -1060px;
     margin-top: 30px;
 }
 
@@ -627,18 +569,26 @@ section .encontre_vagas{
 
 .card-pesquisa input{
     margin-top: 5px;
-    margin-left: 6px;
+    margin-left: 8px;
     padding: 4px;
     border: 1px solid #ccc;
-    width: 95%;
+    width: 90%;
 }
 
 .card-pesquisa button{
     background-color: #2FDF36;
     margin-top: 5px;
-    margin-left: 147px;
+    margin-left: 124px;
     border: none;
-    padding: 10px;
+    border-radius: 3px;
+    padding: 6px;
+    width: 50%;
+}
+
+.button-text{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .topicos{
@@ -667,22 +617,17 @@ section .encontre_vagas{
     border-bottom-right-radius: 50px;
 }
 
-.imgss-interativa{
-    display: flex;
-    flex-direction: column;
-    gap: 170px; 
-    margin-left: 110px;
-    margin-top: 100px;
-}
-
 #gerar_alertas{
 
 }
 
-section .gerar-alertas{
+.sessao-gerar_alertas{
     display: flex;
-    padding: 40px;
-    margin-left: 60px;
+    width: 95%;
+    height: 1500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card_gerar-alertas{
@@ -757,7 +702,7 @@ section .gerar-alertas{
     text-align: left;
 }
 
-*.container-opcoes{
+.container-opcoes{
     background-color: white;
     margin-top: 10px;
     margin-left: 20px;

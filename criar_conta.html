@@ -39,63 +39,65 @@
 
         <!--Sessão de criar conta-->
         <section  >
-            <div class="criar-conta">
-                <div class="card_criar-conta">
-                    <!-- Título da seção -->
-                    <h1>Criar Conta</h1>
-                    <!-- Descrição da seção -->
-                    <p>Crie uma conta para acessar e candidatar as vagas :</p>
-                    <!-- Informação sobre campos obrigatórios -->
-                    <p class="p">Campos com (<span style="color: red;">*</span>) são obrigatórios</p><!--utilizado a tag span para alterar a cor apenas do asterisco-->
-                    <!-- Formulário de criação de conta -->
-                    <form action="#" method="post">
-                        <div class="grupo-form-container">
-                            <!-- Grupo de formulário para o nome -->
-                            <div class="grupo-form">
-                                <label for="nome">Nome <span style="color: red;">*</span></label>
-                                <input type="text" id="Nome" name="Nome" required>
+            <div class="sessao-criar_conta">
+                <div class="criar-conta">
+                    <div class="card_criar-conta">
+                        <!-- Título da seção -->
+                        <h1>Criar Conta</h1>
+                        <!-- Descrição da seção -->
+                        <p>Crie uma conta para acessar e candidatar as vagas :</p>
+                        <!-- Informação sobre campos obrigatórios -->
+                        <p class="p">Campos com (<span style="color: red;">*</span>) são obrigatórios</p><!--utilizado a tag span para alterar a cor apenas do asterisco-->
+                        <!-- Formulário de criação de conta -->
+                        <form action="#" method="post">
+                            <div class="grupo-form-container">
+                                <!-- Grupo de formulário para o nome -->
+                                <div class="grupo-form">
+                                    <label for="nome">Nome <span style="color: red;">*</span></label>
+                                    <input type="text" id="Nome" name="Nome" required>
+                                </div>
+                                <div class="grupo-form">
+                                    <!-- Grupo de formulário para o sobrenome -->
+                                    <label for="sobrenome">Sobrenome <span style="color: red;">*</span></label>
+                                    <input type="text" id="sobrenome" name="sobrenome" required>
+                                </div>
+                            </div>
+                            <div class="grupo-form-container">
+                                <!-- Grupo de formulário para o cargo pretendido -->
+                                <div class="grupo-form">
+                                    <label for="cargo">Cargo Pretendido </label>
+                                    <input type="text" id="cargo" name="cargo">
+                                </div>
+                                <!-- Grupo de formulário para o CEP -->
+                                <div class="grupo-form">
+                                    <label for="cep">CEP </label>
+                                    <input type="text" id="cep" name="cep">
+                                </div>
                             </div>
                             <div class="grupo-form">
-                                <!-- Grupo de formulário para o sobrenome -->
-                                <label for="sobrenome">Sobrenome <span style="color: red;">*</span></label>
-                                <input type="text" id="sobrenome" name="sobrenome" required>
+                                <label for="email">Email <span style="color: red;">*</span></label>
+                                <input placeholder="exemplo@gmail.com" type="email" id="email" name="email" required>
                             </div>
-                        </div>
-                        <div class="grupo-form-container">
-                            <!-- Grupo de formulário para o cargo pretendido -->
                             <div class="grupo-form">
-                                <label for="cargo">Cargo Pretendido </label>
-                                <input type="text" id="cargo" name="cargo">
+                                <label for="Senha">Senha <span style="color: red;">*</span></label>
+                                <input type="password" id="Senha" name="Senha" required>
                             </div>
-                            <!-- Grupo de formulário para o CEP -->
                             <div class="grupo-form">
-                                <label for="cep">CEP </label>
-                                <input type="text" id="cep" name="cep">
+                                <label for="confirmar-senha">Confirmar Senha <span style="color: red;">*</span></label>
+                                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
                             </div>
-                        </div>
-                        <div class="grupo-form">
-                            <label for="email">Email <span style="color: red;">*</span></label>
-                            <input placeholder="exemplo@gmail.com" type="email" id="email" name="email" required>
-                        </div>
-                        <div class="grupo-form">
-                            <label for="Senha">Senha <span style="color: red;">*</span></label>
-                            <input type="password" id="Senha" name="Senha" required>
-                        </div>
-                        <div class="grupo-form">
-                            <label for="confirmar-senha">Confirmar Senha <span style="color: red;">*</span></label>
-                            <input type="password" id="confirmar-senha" name="confirmar-senha" required>
-                        </div>
-                        <div class="checkbox-grupo-form">
-                            <input type="checkbox" id="aceitar" name="aceitar" required>
-                            <label for="aceitar">Li e aceito as <a href="#">Condições Legais</a>  e <a href="#">Política de Privacidade</a></label>
-                        </div>
-                        <button>CADASTRE-SE</button>
-                    </form>
+                            <div class="checkbox-grupo-form">
+                                <input type="checkbox" id="aceitar" name="aceitar" required>
+                                <label for="aceitar">Li e aceito as <a href="#">Condições Legais</a>  e <a href="#">Política de Privacidade</a></label>
+                            </div>
+                            <button>CADASTRE-SE</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="imgns-interativa">
-                <img src="img/acessibilidade.png" alt="" >
-                <img src="img/libras.png" alt="" >
+                <div class="conteiner-imagens_interativas">
+                    <img src="img/acessibilidade.png" alt="" >
+                    <img src="img/libras.png" alt="" >
+                </div>
             </div>
         </section>
 

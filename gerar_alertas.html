@@ -38,135 +38,137 @@
         <div class="linha"></div>
 
         <!--Sessão de gerar alertas de vagas-->
-        <section  >
-            <div class="gerar-alertas">
-                <div class="card_gerar-alertas">
-                     <!-- Título da seção -->
-                     <h1>Criar alertas de vagas</h1>
-                     <!-- Descrição da seção -->
-                    <h3>Crie uma conta para acessar e candidatar as vagas :</h3>
-                    <!-- Informação sobre campos obrigatórios -->
-                    <p>Campos com (<span style="color: red;">*</span>) são obrigatórios</p><!--utilizado a tag span para alterar a cor apenas do asterisco-->
-                    <!-- Formulário de criação de conta -->
-                     <form action="#" method="post">
-                        <div class="alerta-form-container">
-                            <div class="alerta-form">
-                                <label for="email">Informe seu email<span style="color: red;">*</span> </label>
-                                <input type="email" name="email" required>
+        <section >
+            <div class="sessao-gerar_alertas">
+                <div class="gerar-alertas">
+                    <div class="card_gerar-alertas">
+                        <!-- Título da seção -->
+                        <h1>Criar alertas de vagas</h1>
+                        <!-- Descrição da seção -->
+                        <h3>Crie uma conta para acessar e candidatar as vagas :</h3>
+                        <!-- Informação sobre campos obrigatórios -->
+                        <p>Campos com (<span style="color: red;">*</span>) são obrigatórios</p><!--utilizado a tag span para alterar a cor apenas do asterisco-->
+                        <!-- Formulário de criação de conta -->
+                        <form action="#" method="post">
+                            <div class="alerta-form-container">
+                                <div class="alerta-form">
+                                    <label for="email">Informe seu email<span style="color: red;">*</span> </label>
+                                    <input type="email" name="email" required>
+                                </div>
+                                <div class="alerta-form">
+                                    <label for="cargo">Qual cargo está procurando atualmente?</label>
+                                    <input placeholder="Ex. Auxiliar administrativo" type="text" name="cargo" required>
+                                </div>
+                                <div class="alerta-form">
+                                    <label for="local">Qual a localidade de trabalho de sua preferência?</label>
+                                    <input placeholder="Ex. Taguatinga" type="text" name="local" required>
+                                </div>
                             </div>
-                            <div class="alerta-form">
-                                <label for="cargo">Qual cargo está procurando atualmente?</label>
-                                <input placeholder="Ex. Auxiliar administrativo" type="text" name="cargo" required>
+                            <button type="button">- Menos opções</button>
+                            <div class="mais-opcoes">
+                                <div class="novos-campos">
+                                    <h3>Localização</h3>
+                                    <fieldset class="container-opcoes">
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Taguatinga" id="Taguatinga">
+                                            <label for="Taguatinga">Taquatinga</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Cruzeiro" id="Cruzeiro">
+                                            <label for="Cruzeiro">Cruzeiro</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Asa Sul" id="Asa Sul">
+                                            <label for="Asa Sul">Asa Sul</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Asa Norte" id="Asa Norte">
+                                            <label for="Asa Norte">Asa Norte</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Águas Claras" id="Águas Claras">
+                                            <label for="Águas Claras">Águas Claras</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Samambaia" id="Samambaia">
+                                            <label for="Samambaia">Samambaia</label>
+                                        </div>
+                                    </fieldset>
+                                    <h3>Setor</h3>
+                                    <fieldset class="container-opcoes">
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Administracao" id="Administracao">
+                                            <label for="Administracao">Administração</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Design" id="Design">
+                                            <label for="Design">Design</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Engenharia" id="Engenharia">
+                                            <label for="Engenharia">Engenharia</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Hospitalar" id="Hospitalar">
+                                            <label for="Hospitalar">Hospitalar</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Jornalismo" id="Jornalismo">
+                                            <label for="Jornalismo">Jornalismo</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Tecnologia" id="Tecnologia">
+                                            <label for="Tecnologia">Tecnologia da Informação(TI)</label>
+                                        </div>
+                                    </fieldset>
+                                    <h3>Tipo de Contrato</h3>
+                                    <fieldset class="container-opcoes">
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="CLT" id="CLT">
+                                            <label for="CLT">CLT</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="PJ" id="PJ">
+                                            <label for="PJ">PJ</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Freelancer" id="Freelancer">
+                                            <label for="Freelancer">Freelancer</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="Estagio" id="Estagio">
+                                            <label for="Estagio">Estágio</label>
+                                        </div>
+                                    </fieldset>
+                                    <h3>Faixa Salarial</h3>
+                                    <fieldset class="container-opcoes">
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="faixa-salarial" id="faixa-salarial">
+                                            <label for="faixa-salarial">0,00 - 500,00 R$</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="faixa-salarial" id="faixa-salarial">
+                                            <label for="faixa-salarial">501,00 - 1500,00 R$</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="faixa-salarial" id="faixa-salarial">
+                                            <label for="faixa-salarial">1501,00 - 2500,00 R$</label>
+                                        </div>
+                                        <div class="opcoes">
+                                            <input type="checkbox" name="faixa-salarial" id="faixa-salarial">
+                                            <label for="faixa-salarial">2501,00 R$ ou mais </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <button type="submit" class="btn-criar-alerta">CRIAR ALERTA</button>
                             </div>
-                            <div class="alerta-form">
-                                <label for="local">Qual a localidade de trabalho de sua preferência?</label>
-                                <input placeholder="Ex. Taguatinga" type="text" name="local" required>
-                            </div>
-                        </div>
-                        <button type="button">- Menos opções</button>
-                        <div class="mais-opcoes">
-                            <div class="novos-campos">
-                                <h3>Localização</h3>
-                                <fieldset class="container-opcoes">
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Taguatinga" id="Taguatinga">
-                                        <label for="Taguatinga">Taquatinga</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Cruzeiro" id="Cruzeiro">
-                                        <label for="Cruzeiro">Cruzeiro</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Asa Sul" id="Asa Sul">
-                                        <label for="Asa Sul">Asa Sul</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Asa Norte" id="Asa Norte">
-                                        <label for="Asa Norte">Asa Norte</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Águas Claras" id="Águas Claras">
-                                        <label for="Águas Claras">Águas Claras</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Samambaia" id="Samambaia">
-                                        <label for="Samambaia">Samambaia</label>
-                                    </div>
-                                </fieldset>
-                                <h3>Setor</h3>
-                                <fieldset class="container-opcoes">
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Administracao" id="Administracao">
-                                        <label for="Administracao">Administração</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Design" id="Design">
-                                        <label for="Design">Design</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Engenharia" id="Engenharia">
-                                        <label for="Engenharia">Engenharia</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Hospitalar" id="Hospitalar">
-                                        <label for="Hospitalar">Hospitalar</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Jornalismo" id="Jornalismo">
-                                        <label for="Jornalismo">Jornalismo</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Tecnologia" id="Tecnologia">
-                                        <label for="Tecnologia">Tecnologia da Informação(TI)</label>
-                                    </div>
-                                </fieldset>
-                                <h3>Tipo de Contrato</h3>
-                                <fieldset class="container-opcoes">
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="CLT" id="CLT">
-                                        <label for="CLT">CLT</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="PJ" id="PJ">
-                                        <label for="PJ">PJ</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Freelancer" id="Freelancer">
-                                        <label for="Freelancer">Freelancer</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="Estagio" id="Estagio">
-                                        <label for="Estagio">Estágio</label>
-                                    </div>
-                                </fieldset>
-                                <h3>Faixa Salarial</h3>
-                                <fieldset class="container-opcoes">
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="faixa-salarial" id="faixa-salarial">
-                                        <label for="faixa-salarial">0,00 - 500,00 R$</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="faixa-salarial" id="faixa-salarial">
-                                        <label for="faixa-salarial">501,00 - 1500,00 R$</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="faixa-salarial" id="faixa-salarial">
-                                        <label for="faixa-salarial">1501,00 - 2500,00 R$</label>
-                                    </div>
-                                    <div class="opcoes">
-                                        <input type="checkbox" name="faixa-salarial" id="faixa-salarial">
-                                        <label for="faixa-salarial">2501,00 R$ ou mais </label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <button type="submit" class="btn-criar-alerta">CRIAR ALERTA</button>
-                        </div>
-                     </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="imgns-interativa">
-                <img src="img/acessibilidade.png" alt="" >
-                <img src="img/libras.png" alt="" >
+                <div class="conteiner-imagens_interativas">
+                    <img src="img/acessibilidade.png" alt="" >
+                    <img src="img/libras.png" alt="" >
+                </div>
             </div>
         </section>
 
