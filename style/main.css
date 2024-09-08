@@ -127,7 +127,7 @@ form{
 }
 
 /* Estilo para todos os elementos fieldset */
-fieldset{
+.conteiner-bloco_pesquisa{
     border: none;/* Remove a borda padrão do fieldset */
     border-radius: 7px;
     margin-left: 20px;
@@ -328,6 +328,7 @@ footer{
     color: #0F729C;
     text-align: center;
     font-size: 54px;
+    margin-top: 20px;
 }
 
 /* Estilo para a classe login-form */
@@ -335,6 +336,7 @@ footer{
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -387,10 +389,11 @@ footer{
  .forgot-password{
     width: 100px;
     height: 30px;
+    margin-top: 10px;
 }
 
 .forgot-password a{
-    margin-left: -100px;
+    margin-left: 300px;
     color: #0F729C;
     font-size: 15px;
     text-decoration: none;
@@ -635,7 +638,7 @@ section .encontre_vagas{
     border-radius: 20px;
     padding: 10px auto;
     margin-left: 100px;
-    height: 1270px;
+    height: 1290px;
     width: 900px;
 }
 
@@ -714,18 +717,11 @@ section .encontre_vagas{
 }
 
 .opcoes{
-    display: flex;
+    margin: 5px 5px;
 }
 
 .opcoes input{
-    height: 15px;
-    margin-top: 10px;
-    margin-left: -375px;
-    margin-right: -375px;
-}
-
-.opcoes label{
-    margin-top: 10px;
+    border: 10px solid black;
 }
 
 .card_gerar-alertas .btn-criar-alerta{
