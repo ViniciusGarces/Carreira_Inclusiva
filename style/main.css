@@ -6,7 +6,7 @@ body {
     color: black;
 }
 
-body.contraste{
+body.contraste {
     background-color: black;
     color: red;
 }
@@ -253,9 +253,27 @@ input[type="submit"]{
     right: 10px;
     z-index: 1000;
     background: #f1f1f1;
-    padding: 10px;
+    padding-top: 10px;
     border-radius: 5px;
+    width: 400px;
     display: none; /* Menu escondido inicialmente */
+  }
+
+  .infoInicial {
+    background-color: #0F729C;
+    margin-top: -10px;
+    width: 400px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+
+  .infoInicial h3{
+    color: white;
+
   }
   
   .acessibilidade button {
