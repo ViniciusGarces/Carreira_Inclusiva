@@ -318,14 +318,16 @@ input[type="submit"]{
     padding: 10px;
   }
 
-/* Estilo para a classe img-interativa */
-.img-interativa{
-    display: flex;
-    flex-direction: column;/* Define a direção dos itens como coluna */
-    gap: 130px;/* Define o espaçamento entre os itens */
-    max-width: 35%;
-    margin-left: 200px;
+/*Estilo para a imagem acessibilidade*/
+#acessibilidadeImg {
+    position: fixed;
+    bottom: 420px; 
+    right: 10px; 
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer;
 }
+
 /* Estilo para o elemento com id empresa-inclusao */
 #empresa-inclusao{
     background-color: #0F729C;
@@ -489,25 +491,6 @@ footer{
     white-space: nowrap;
 }
 
-.conteiner-imagens_interativas{
-    width: 100px;
-    position: absolute; /* Posicionamento absoluto */
-    right: 0; /* Alinha à direita */
-    top: 60%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajusta a centralização vertical */
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.conteiner-imagens_interativas img{
-    height: 45px;
-    width: 45px;
-    margin-left: 50px;
-    margin-top: 40px;
-}
-
 /*pagina de criar conta*/
 #criar-conta{
 
@@ -644,7 +627,9 @@ section .encontre_vagas{
     margin-left: 45px;
     margin-top: 20px;
     width: 350px;
-    height: 350px;
+    height: 400px;
+    transition: height 0.3s ease-in-out; /* Suavizar a transição de altura */
+    overflow: hidden; /* Esconde o conteúdo que não cabe no tamanho atual */
 }
 
 .card-pesquisa h3{
@@ -688,11 +673,59 @@ section .encontre_vagas{
     flex-direction: row;
     gap: 5px;
     margin-bottom: 15px;
+    margin-left: -115px;
+}
+
+/*Estilo para o botão dropdown-btn */
+.topicos button{
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 40px;
+    height: 30px;
+    margin-right: auto;
+    white-space: nowrap;
 }
 
 .topicos img{
     margin-left: 10px;
     height: 20px;
+}
+
+/* Esconder as opções por padrão */
+.options {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Suavizar a abertura e fechamento */
+}
+
+.options p{
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0F729C;
+}
+  
+  /* Estilo da seta */
+#arrow {
+    width: 16px; /* Tamanho da seta */
+    transition: transform 0.3s ease;
+}
+  
+.rotate-up {
+    transform: rotate(90deg); /* Girar a seta para baixo */
+}
+
+  /* Exibir as opções quando estiver ativo */
+.show {
+    display: block;
+    max-height: 1200px; 
+}
+
+#salaryBand-options {
+    margin-bottom: 15px;
 }
 
 .conteiner-vagas{

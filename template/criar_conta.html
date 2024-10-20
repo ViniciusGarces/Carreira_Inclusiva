@@ -95,9 +95,49 @@
                     </div>
                 </div>
                 <div class="conteiner-imagens_interativas">
-                    <img src="/Carreira_Inclusiva/img/acessibilidade.png" alt="" >
-                    <img src="/Carreira_Inclusiva/img/libras.png" alt="" >
+                    <img src="/Carreira_Inclusiva/img/acessibilidade.png" alt="" id="acessibilidadeImg">
                 </div>
+
+                <div class="acessibilidade">
+                    <div class="acessibilidade_titulo">
+                        <h1>Menu Acessibilidade(CTRL+U)</h1>
+                        <img src="/Carreira_Inclusiva/img/x.png" alt="" id="fecharImg"> 
+                    </div>
+                    <div class="conteiner-menu_acessibilidade">
+                        <div class="menu_acessibilidade">
+                            <div class="grupo-menu_acessibilidade">
+                                <button onclick="linksDestacados()">Links destacados</button>
+                                <button onclick="espaçamentoTexto()">Espaçamento de texto</button>
+                                <button onclick="ocultarImagem()">Ocultar imagens</button>
+                                <button onclick="cursor()">Cursor</button>
+                                <button onclick="alturaLinha()">Altura da linha</button>
+                                <button onclick="saturacao()">Saturação</button>
+                            </div>
+                            <div class="grupo-menu_acessibilidade">
+                                <button onclick="contraste()">Contraste +</button>
+                                <button onclick="aumentar_diminuir_texto()">Texto maior</button>
+                                <button onclick=pararAnimação()>Parar animações</button>
+                                <button onclick=dislexiaAmigavel()>Dislexia amigáel</button>
+                                <button onclick=barraFerramenta()>Barra de ferramentas</button>
+                                <button onclick=alinhamentoTexto()>Alinhamento do texto</button>
+                            </div>
+                        </div>
+                        <div class="redefinir_acessibilidade">
+                            <button>Redefinir as configurações de acessibilidade</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div vw class="enabled">
+                    <div vw-access-button class="active"></div>
+                    <div vw-plugin-wrapper>
+                      <div class="vw-plugin-top-wrapper"></div>
+                    </div>
+                </div>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                    new window.VLibras.Widget('https://vlibras.gov.br/app');
+                </script>
             </div>
         </section>
 
@@ -111,6 +151,8 @@
                 </div>
             </div>
          </footer>
+
+         <script src="/Carreira_Inclusiva/componentes/JS/menuAcessibilidade.js"></script>
 
     </body>
 </html>

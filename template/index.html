@@ -108,7 +108,6 @@
                 
                 <div class="img-interativa">
                     <img src="/Carreira_Inclusiva/img/acessibilidade.png" alt="" id="acessibilidadeImg">
-                    <img src="/Carreira_Inclusiva/img/libras.png" alt="" id="vlibras-button">
                 </div>
 
                 <div class="acessibilidade">
@@ -140,6 +139,17 @@
                         </div>
                     </div>
                 </div>
+
+                <div vw class="enabled">
+                    <div vw-access-button class="active"></div>
+                    <div vw-plugin-wrapper>
+                      <div class="vw-plugin-top-wrapper"></div>
+                    </div>
+                </div>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                    new window.VLibras.Widget('https://vlibras.gov.br/app');
+                </script>
 
             </div>
         </section>
@@ -188,7 +198,7 @@
             </div>
          </footer>
          
-         <script src="/Carreira_Inclusiva/backend/JS/menuAcessibilidade.js"></script>
+         <script src="/Carreira_Inclusiva/componentes/JS/menuAcessibilidade.js"></script>
 
 
     </body>
