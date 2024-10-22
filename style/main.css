@@ -250,22 +250,68 @@ input[type="submit"]{
 .acessibilidade {
     position: fixed;
     top: 10px;
+    width: 400px;
     right: 10px;
     z-index: 1000;
     background: #f1f1f1;
+<<<<<<< HEAD
+    height: 550px;  
+=======
     padding-top: 10px;
+>>>>>>> ca2b32845f6e3b185c43250add79fae7a74bd213
     border-radius: 5px;
     width: 400px;
     height: 500px;
     display: none; /* Menu escondido inicialmente */
   }
 
+<<<<<<< HEAD
+=======
+  .infoInicial {
+    background-color: #0F729C;
+    margin-top: -10px;
+    width: 400px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+
+  .infoInicial h3{
+    color: white;
+
+  }
+  
+.acessibilidade_titulo{
+    height: 50px;
+    background-color: #08425B;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+  }
+
+  .acessibilidade_titulo h1{
+    color: white;
+    margin-left: 20px;
+    padding-top: 10px;  
+  }
+
+  .acessibilidade_titulo img{
+    height: 30px;
+    padding: 10px;
+  }
+  
+>>>>>>> e1936288213bc3454cd80b8751eeecaadcb6f281
   .acessibilidade button {
     margin: 5px;
     padding: 10px;
     cursor: pointer;
   }
 
+<<<<<<< HEAD
 .titulo_menu{
     background-color: #0F729C;
     margin-top: -10px;
@@ -282,12 +328,51 @@ input[type="submit"]{
 
 /* Estilo para a classe img-interativa */
 .img-interativa{
+=======
+  .conteiner-menu_acessibilidade{
+    max-height: 500px; /* Define a altura máxima desejada */
+    overflow-y: auto; /* Adiciona rolagem vertical */
+  }
+
+  .menu_acessibilidade{
+>>>>>>> e1936288213bc3454cd80b8751eeecaadcb6f281
     display: flex;
-    flex-direction: column;/* Define a direção dos itens como coluna */
-    gap: 130px;/* Define o espaçamento entre os itens */
-    max-width: 35%;
-    margin-left: 200px;
+    flex-direction: row;
+    padding: 20px 40px;
+  }
+
+  .grupo-menu_acessibilidade{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grupo-menu_acessibilidade button{
+    height: 100px;
+  }
+
+  .redefinir_acessibilidade {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    padding: 10px;
 }
+
+  .redefinir_acessibilidade button{
+    background-color: #199AD1;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+  }
+
+/*Estilo para a imagem acessibilidade*/
+#acessibilidadeImg {
+    position: fixed;
+    bottom: 420px; 
+    right: 10px; 
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer;
+}
+
 /* Estilo para o elemento com id empresa-inclusao */
 #empresa-inclusao{
     background-color: #0F729C;
@@ -451,25 +536,6 @@ footer{
     white-space: nowrap;
 }
 
-.conteiner-imagens_interativas{
-    width: 100px;
-    position: absolute; /* Posicionamento absoluto */
-    right: 0; /* Alinha à direita */
-    top: 60%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajusta a centralização vertical */
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.conteiner-imagens_interativas img{
-    height: 45px;
-    width: 45px;
-    margin-left: 50px;
-    margin-top: 40px;
-}
-
 /*pagina de criar conta*/
 #criar-conta{
 
@@ -606,7 +672,9 @@ section .encontre_vagas{
     margin-left: 45px;
     margin-top: 20px;
     width: 350px;
-    height: 350px;
+    height: 400px;
+    transition: height 0.3s ease-in-out; /* Suavizar a transição de altura */
+    overflow: hidden; /* Esconde o conteúdo que não cabe no tamanho atual */
 }
 
 .card-pesquisa h3{
@@ -650,11 +718,59 @@ section .encontre_vagas{
     flex-direction: row;
     gap: 5px;
     margin-bottom: 15px;
+    margin-left: -115px;
+}
+
+/*Estilo para o botão dropdown-btn */
+.topicos button{
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 40px;
+    height: 30px;
+    margin-right: auto;
+    white-space: nowrap;
 }
 
 .topicos img{
     margin-left: 10px;
     height: 20px;
+}
+
+/* Esconder as opções por padrão */
+.options {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Suavizar a abertura e fechamento */
+}
+
+.options p{
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0F729C;
+}
+  
+  /* Estilo da seta */
+#arrow {
+    width: 16px; /* Tamanho da seta */
+    transition: transform 0.3s ease;
+}
+  
+.rotate-up {
+    transform: rotate(90deg); /* Girar a seta para baixo */
+}
+
+  /* Exibir as opções quando estiver ativo */
+.show {
+    display: block;
+    max-height: 1200px; 
+}
+
+#salaryBand-options {
+    margin-bottom: 15px;
 }
 
 .conteiner-vagas{

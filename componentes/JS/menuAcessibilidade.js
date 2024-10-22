@@ -3,6 +3,8 @@ const imgAcessibilidade = document.getElementById('acessibilidadeImg');
 //selecionar um elemento html com a classe .acessibilidade e armazenar uma referencia a ele na constante menuAcessibilidade
 const menuAcessibilidade = document.querySelector('.acessibilidade');
 
+
+
 //Exibir/ocultar o menu ao clicar na imagem
 imgAcessibilidade.addEventListener('click', () => {
     if (menuAcessibilidade.style.display === 'none' || menuAcessibilidade.style.display === '') {
@@ -11,6 +13,12 @@ imgAcessibilidade.addEventListener('click', () => {
         menuAcessibilidade.style.display = 'none';
     }
 });
+
+//ocultar o menu ao clicar no botão fechar'
+document.getElementById('fecharImg').addEventListener('click', function() {
+    document.querySelector('.acessibilidade').style.display = 'none';
+});
+
 // função para alterar o contraste da página
 function contraste() {
     document.body.classList.toggle('contraste');

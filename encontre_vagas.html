@@ -48,25 +48,62 @@
                         <h3 class="h3-texto">Refine sua pesquisa</h3>
                         <div class="refine-pesquisa">
                             <div class="topicos">
-                                <img src="/Carreira_Inclusiva/img/seta.png" alt="" srcset="">
-                                <p>Localização</p>
+                                <button id="location-btn" onclick="toggleDropdown('location-options', 'location-arrow')">
+                                    <img src="/Carreira_Inclusiva/img/seta.png" id="location-arrow" srcset="" alt="Seta">Localização
+                                </button>
+                            </div>
+                            <div id="location-options" class="options">
+                                <p>Taquatinga</p>
+                                <p>Cruzeiro</p>
+                                <p>Asa Sul</p>
+                                <p>Asa Norte</p>
+                                <p>Águas Claras</p>
                             </div>
                             <div class="topicos">
-                                <img src="/Carreira_Inclusiva/img/seta.png" alt="" srcset="">
-                                <p>Setor</p>
+                                <button id="sector-btn" onclick="toggleDropdown('sector-options', 'sector-arrow')">
+                                    <img src="/Carreira_Inclusiva/img/seta.png" id="sector-arrow" srcset="" alt="Seta">Setor
+                                </button>
                             </div>
+                            <div id="sector-options" class="options">
+                                <p>Administração</p>    
+                                <p>Design</p>
+                                <p>Engenharia</p>
+                                <p>Hospitalar</p>
+                                <p>Jornalismo</p>
+                                <p>Jornalismo</p>
+                              </div>
                             <div class="topicos">
-                                <img src="/Carreira_Inclusiva/img/seta.png" alt="" srcset="">
-                                <p>Função</p>
+                                <button id="function-btn" onclick="toggleDropdown('function-options', 'function-arrow')">
+                                    <img src="/Carreira_Inclusiva/img/seta.png" id="function-arrow" srcset="" alt="Seta">Função
+                                </button>
                             </div>
+                            <div id="function-options" class="options">
+                                <p>Auxiliar Administrativo</p>
+                                <p>Analista</p>
+                                <p>Atendente</p>
+                              </div>
                             <div class="topicos">
-                                <img src="/Carreira_Inclusiva/img/seta.png" alt="" srcset="">
-                                <p>Tipo de contrato</p>
+                                <button id="contractType-btn" onclick="toggleDropdown('contractType-options', 'contractType-arrow')">
+                                    <img src="/Carreira_Inclusiva/img/seta.png" id="contractType-arrow" srcset="" alt="Seta">Tipo de contrato
+                                </button>
                             </div>
+                            <div id="contractType-options" class="options">
+                                <p>CLT</p>
+                                <p>PJ</p>
+                                <p>Estagiário</p>
+                                <p>Trainee</p>
+                              </div>
                             <div class="topicos">
-                                <img src="/Carreira_Inclusiva/img/seta.png" alt="" srcset="">
-                                <p>Faixa salarial</p>
+                                <button id="salaryBand-btn" onclick="toggleDropdown('salaryBand-options', 'salaryBand-arrow')">
+                                    <img src="/Carreira_Inclusiva/img/seta.png" id="salaryBand-arrow" srcset="" alt="Seta">Faixa salarial
+                                </button>
                             </div>
+                            <div id="salaryBand-options" class="options">
+                                <p>R$ 0,00 - 500,00</p>
+                                <p>R$ 501,00 - 1500,00</p>
+                                <p>R$ 1501,00 - 2500,00</p>
+                                <p>R$ 2500,00 ou mais</p>
+                              </div>
                         </div>
                     </div>
                     <div class="conteiner-vagas">
@@ -84,8 +121,52 @@
                     </div>
                     <div class="conteiner-imagens_interativas">
                         <img src="/Carreira_Inclusiva/img/acessibilidade.png" alt="" id="acessibilidadeImg">
+<<<<<<< HEAD
+=======
                         <img src="/Carreira_Inclusiva/img/libras.png" alt="" >
+>>>>>>> ca2b32845f6e3b185c43250add79fae7a74bd213
                     </div>
+    
+                    <div class="acessibilidade">
+                        <div class="acessibilidade_titulo">
+                            <h1>Menu Acessibilidade(CTRL+U)</h1>
+                            <img src="/Carreira_Inclusiva/img/x.png" alt="" id="fecharImg"> 
+                        </div>
+                        <div class="conteiner-menu_acessibilidade">
+                            <div class="menu_acessibilidade">
+                                <div class="grupo-menu_acessibilidade">
+                                    <button onclick="linksDestacados()">Links destacados</button>
+                                    <button onclick="espaçamentoTexto()">Espaçamento de texto</button>
+                                    <button onclick="ocultarImagem()">Ocultar imagens</button>
+                                    <button onclick="cursor()">Cursor</button>
+                                    <button onclick="alturaLinha()">Altura da linha</button>
+                                    <button onclick="saturacao()">Saturação</button>
+                                </div>
+                                <div class="grupo-menu_acessibilidade">
+                                    <button onclick="contraste()">Contraste +</button>
+                                    <button onclick="aumentar_diminuir_texto()">Texto maior</button>
+                                    <button onclick=pararAnimação()>Parar animações</button>
+                                    <button onclick=dislexiaAmigavel()>Dislexia amigáel</button>
+                                    <button onclick=barraFerramenta()>Barra de ferramentas</button>
+                                    <button onclick=alinhamentoTexto()>Alinhamento do texto</button>
+                                </div>
+                            </div>
+                            <div class="redefinir_acessibilidade">
+                                <button>Redefinir as configurações de acessibilidade</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div vw class="enabled">
+                        <div vw-access-button class="active"></div>
+                        <div vw-plugin-wrapper>
+                          <div class="vw-plugin-top-wrapper"></div>
+                        </div>
+                    </div>
+                    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                    <script>
+                        new window.VLibras.Widget('https://vlibras.gov.br/app');
+                    </script>
                 </div>
             </div>
         </section>
@@ -101,6 +182,12 @@
             </div>
          </footer>
 
+<<<<<<< HEAD
+         <script src="/Carreira_Inclusiva/componentes/JS/menuAcessibilidade.js"></script>
+         <script src="/Carreira_Inclusiva/componentes/JS/refinaPesquisa.js"></script>
+
+=======
          <script src="/Carreira_Inclusiva/src/componentes/menuAcessibilidade.js"></script>
+>>>>>>> ca2b32845f6e3b185c43250add79fae7a74bd213
     </body>
 </html>
