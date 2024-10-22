@@ -256,30 +256,28 @@ input[type="submit"]{
     padding-top: 10px;
     border-radius: 5px;
     width: 400px;
+    height: 500px;
     display: none; /* Menu escondido inicialmente */
   }
 
-  .infoInicial {
-    background-color: #0F729C;
-    margin-top: -10px;
-    width: 400px;
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-  }
-
-  .infoInicial h3{
-    color: white;
-
-  }
-  
   .acessibilidade button {
     margin: 5px;
     padding: 10px;
     cursor: pointer;
+  }
+
+.titulo_menu{
+    background-color: #0F729C;
+    margin-top: -10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+    width: 100%;
+  }
+
+  .titulo_menu h1{
+    margin-top: 10px;
+    margin-left: 10px;
   }
 
 /* Estilo para a classe img-interativa */
