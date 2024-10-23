@@ -23,6 +23,110 @@ section{
     padding: 0;
 }
 
+.acessibilidade {
+    position: fixed;
+    top: 10px;
+    width: 400px;
+    right: 10px;
+    z-index: 1000;
+    background: #f1f1f1;
+    height: 550px;  
+    padding-top: 10px;
+    border-radius: 5px;
+    width: 400px;
+    height: 550px;
+    display: none; /* Menu escondido inicialmente */
+  }
+
+.acessibilidade_titulo{
+    height: 50px;
+    background-color: #08425B;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: -10px;
+    display: flex;
+  }
+
+  .acessibilidade_titulo h1{
+    color: white;
+    margin-left: 20px;
+    padding-top: 10px;  
+  }
+
+  .acessibilidade_titulo img{
+    height: 30px;
+    padding: 10px;
+  }
+  
+  .acessibilidade button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+.titulo_menu{
+    background-color: #0F729C;
+    margin-top: -10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+    width: 100%;
+  }
+
+  .titulo_menu h1{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+/* Estilo para a classe img-interativa */
+  .conteiner-menu_acessibilidade{
+    max-height: 500px; /* Define a altura máxima desejada */
+    overflow-y: auto; /* Adiciona rolagem vertical */
+  }
+
+  .menu_acessibilidade{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 40px;
+  }
+
+  .grupo-menu_acessibilidade{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grupo-menu_acessibilidade button{
+    height: 100px;
+  }
+
+  .redefinir_acessibilidade {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    padding: 10px;
+}
+
+  .redefinir_acessibilidade button{
+    background-color: #199AD1;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+  }
+
+/*Estilo para a imagem acessibilidade*/
+#acessibilidadeImg {
+    position: fixed;
+    bottom: 420px; 
+    right: 10px; 
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer;
+}
+
+#pag-index{
+
+}
+
 /* Define o contêiner dentro do header como um contêiner flexível */
 header .conteiner{
     display: flex;
@@ -245,132 +349,6 @@ input[type="submit"]{
     height: 30px;
     border: none;
     border-radius: 30px;  
-}
-
-.acessibilidade {
-    position: fixed;
-    top: 10px;
-    width: 400px;
-    right: 10px;
-    z-index: 1000;
-    background: #f1f1f1;
-<<<<<<< HEAD
-    height: 550px;  
-=======
-    padding-top: 10px;
->>>>>>> ca2b32845f6e3b185c43250add79fae7a74bd213
-    border-radius: 5px;
-    width: 400px;
-    height: 500px;
-    display: none; /* Menu escondido inicialmente */
-  }
-
-<<<<<<< HEAD
-=======
-  .infoInicial {
-    background-color: #0F729C;
-    margin-top: -10px;
-    width: 400px;
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-  }
-
-  .infoInicial h3{
-    color: white;
-
-  }
-  
-.acessibilidade_titulo{
-    height: 50px;
-    background-color: #08425B;
-    width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    display: flex;
-  }
-
-  .acessibilidade_titulo h1{
-    color: white;
-    margin-left: 20px;
-    padding-top: 10px;  
-  }
-
-  .acessibilidade_titulo img{
-    height: 30px;
-    padding: 10px;
-  }
-  
->>>>>>> e1936288213bc3454cd80b8751eeecaadcb6f281
-  .acessibilidade button {
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-<<<<<<< HEAD
-.titulo_menu{
-    background-color: #0F729C;
-    margin-top: -10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 45px;
-    width: 100%;
-  }
-
-  .titulo_menu h1{
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-
-/* Estilo para a classe img-interativa */
-.img-interativa{
-=======
-  .conteiner-menu_acessibilidade{
-    max-height: 500px; /* Define a altura máxima desejada */
-    overflow-y: auto; /* Adiciona rolagem vertical */
-  }
-
-  .menu_acessibilidade{
->>>>>>> e1936288213bc3454cd80b8751eeecaadcb6f281
-    display: flex;
-    flex-direction: row;
-    padding: 20px 40px;
-  }
-
-  .grupo-menu_acessibilidade{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .grupo-menu_acessibilidade button{
-    height: 100px;
-  }
-
-  .redefinir_acessibilidade {
-    display: flex;
-    justify-content: center; /* Centraliza o botão horizontalmente */
-    padding: 10px;
-}
-
-  .redefinir_acessibilidade button{
-    background-color: #199AD1;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
-  }
-
-/*Estilo para a imagem acessibilidade*/
-#acessibilidadeImg {
-    position: fixed;
-    bottom: 420px; 
-    right: 10px; 
-    width: 40px; 
-    height: 40px; 
-    cursor: pointer;
 }
 
 /* Estilo para o elemento com id empresa-inclusao */
