@@ -1,7 +1,6 @@
 function toggleDropdown(optionsId, arrowId) {
   const dropdownOptions = document.getElementById(optionsId);
   const arrow = document.getElementById(arrowId);
-  const cardPesquisa = document.querySelector(".card-pesquisa"); // Seleciona a .card-pesquisa
 
   // Toggle entre mostrar/esconder as opções
   dropdownOptions.classList.toggle("show");

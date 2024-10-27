@@ -341,8 +341,9 @@ h3{
     text-align: center;
 }
 
-input[type="submit"]{
+.botao-card button{
     margin-left: 70px;
+    font-weight: bold;
     background-color: #2FDF36;
     color: white;
     width: 150px;
@@ -713,6 +714,7 @@ section .encontre_vagas{
 .topicos img{
     margin-left: 10px;
     height: 20px;
+    transition: transform 0.3s ease;
 }
 
 /* Esconder as opções por padrão */
@@ -731,13 +733,7 @@ section .encontre_vagas{
     color: #0F729C;
 }
   
-  /* Estilo da seta */
-#arrow {
-    width: 16px; /* Tamanho da seta */
-    transition: transform 0.3s ease;
-}
-  
-.rotate-up {
+.rotate {
     transform: rotate(90deg); /* Girar a seta para baixo */
 }
 
