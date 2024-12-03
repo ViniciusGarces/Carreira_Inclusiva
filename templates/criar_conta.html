@@ -9,6 +9,7 @@
         <meta name="Kwywords" contente="Carreira, Inclusão, Vagas de Emprego"/>
         <meta name="descreption" content="Site de vagas de emprego exluiva para pessoas com deficiência no Distrito Federal"/>
         
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
         <link rel="stylesheet" href="/Carreira_Inclusiva/style/main.css">
 
         <title>Carreira Inclusiva</title>
@@ -83,8 +84,8 @@
                                 <input type="password" id="senha" name="senha" required>
                             </div>
                             <div class="grupo-form">
-                                <label for="confirmar-senha">Confirmar Senha <span style="color: red;">*</span></label>
-                                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+                                <label for="confirmar_senha">Confirmar Senha <span style="color: red;">*</span></label>
+                                <input type="password" id="confirmar_senha" name="confirmar_senha" required>
                             </div>
                             <div class="checkbox-grupo-form">
                                 <input type="checkbox" id="aceitar" name="aceitar" required>
