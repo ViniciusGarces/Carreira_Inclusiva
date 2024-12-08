@@ -409,6 +409,41 @@ footer{
     height: 20px;
 }
 
+#pag-index_logado{
+
+}
+
+.menu_usuarios{
+    position: absolute; /*Fixar a classe botoes na tela*/
+    top: 6%; /*Posicionar os botoes no meio vertical*/
+    right: 70px; /*Distância dos botoes da direita*/
+    transform: translateY(-50%); /*Ajustar o posicionamento dos botoes vertical*/
+}
+
+.menu_usuarios img{
+    height: 20px;
+}
+
+.menu_usuarios .seta_baixo{
+    height: 10px;
+}
+
+/* Estilo para o separador */
+.separador {
+    margin: 0 10px; /* Adiciona margem à esquerda e à direita do separador */
+    color: #000; /* Define a cor do separador */
+    font-weight: 1px; /* Define o peso da fonte do separador */
+    font-size: 30px;
+}
+
+.logout{
+    color: #0F729C;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
 /*página de login*/
 #pag-login{
 

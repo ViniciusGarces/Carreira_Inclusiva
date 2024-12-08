@@ -43,7 +43,9 @@ def login():
 
         for usuario in usuarios:
             if email == usuario['email'] and senha == usuario['senha']:
-                return render_template("index.html", emailUsuario=usuario['email'])
+                 # Envia o nome (primeiro nome) para o template
+                primeiro_nome = usuario['nome'].split()[0]  # Pega o primeiro nome
+                return render_template("index_logado.html", nomeUsuario=primeiro_nome)
 
         flash("Usuário ou senha inválidos!", "danger")
         return redirect(url_for('login'))

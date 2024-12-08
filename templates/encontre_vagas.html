@@ -9,6 +9,7 @@
         <meta name="Kwywords" contente="Carreira, Inclusão, Vagas de Emprego"/>
         <meta name="descreption" content="Site de vagas de emprego exluiva para pessoas com deficiência no Distrito Federal"/>
         
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
         <link rel="stylesheet" href="/Carreira_Inclusiva/style/main.css">
 
         <title>Carreira Inclusiva</title>
@@ -16,7 +17,7 @@
     <body>
         <header>
             <div class="conteiner">
-                <img src="/Carreira_Inclusiva/img/logo.png" alt="" srcset="">
+                <img src="{{ url_for('static', filename='img/logo.png')}}" alt="" srcset="">
                 <h1 class = "logo">Carreira Inclusiva </h1>
                 <div class="botoes">
                     <a href="login.html"><button type="submit" class="botao">Login</button></a>
@@ -49,7 +50,7 @@
                         <div class="refine-pesquisa">
                             <div class="topicos">
                                 <button id="location-btn" onclick="toggleDropdown('location-options', 'location-arrow')">
-                                    <img src="/Carreira_Inclusiva/img/seta.png" id="location-arrow" srcset="" alt="Seta">Localização
+                                    <img src="{{ url_for('static', filename='img/seta.png')}}" id="location-arrow" srcset="" alt="Seta">Localização
                                 </button>
                             </div>
                             <div id="location-options" class="options">
@@ -61,7 +62,7 @@
                             </div>
                             <div class="topicos">
                                 <button id="sector-btn" onclick="toggleDropdown('sector-options', 'sector-arrow')">
-                                    <img src="/Carreira_Inclusiva/img/seta.png" id="sector-arrow" srcset="" alt="Seta">Setor
+                                    <img src="{{ url_for('static', filename='img/seta.png')}}" id="sector-arrow" srcset="" alt="Seta">Setor
                                 </button>
                             </div>
                             <div id="sector-options" class="options">
@@ -74,7 +75,7 @@
                               </div>
                             <div class="topicos">
                                 <button id="function-btn" onclick="toggleDropdown('function-options', 'function-arrow')">
-                                    <img src="/Carreira_Inclusiva/img/seta.png" id="function-arrow" srcset="" alt="Seta">Função
+                                    <img src="{{ url_for('static', filename='img/seta.png')}}" id="function-arrow" srcset="" alt="Seta">Função
                                 </button>
                             </div>
                             <div id="function-options" class="options">
@@ -84,7 +85,7 @@
                               </div>
                             <div class="topicos">
                                 <button id="contractType-btn" onclick="toggleDropdown('contractType-options', 'contractType-arrow')">
-                                    <img src="/Carreira_Inclusiva/img/seta.png" id="contractType-arrow" srcset="" alt="Seta">Tipo de contrato
+                                    <img src="{{ url_for('static', filename='img/seta.png')}}" id="contractType-arrow" srcset="" alt="Seta">Tipo de contrato
                                 </button>
                             </div>
                             <div id="contractType-options" class="options">
@@ -95,7 +96,7 @@
                               </div>
                             <div class="topicos">
                                 <button id="salaryBand-btn" onclick="toggleDropdown('salaryBand-options', 'salaryBand-arrow')">
-                                    <img src="/Carreira_Inclusiva/img/seta.png" id="salaryBand-arrow" srcset="" alt="Seta">Faixa salarial
+                                    <img src="{{ url_for('static', filename='img/seta.png')}}" id="salaryBand-arrow" srcset="" alt="Seta">Faixa salarial
                                 </button>
                             </div>
                             <div id="salaryBand-options" class="options">
@@ -116,31 +117,31 @@
                     </div>
                     <!--Menu acessibilidade-->
                 <div class="img-interativa">
-                    <img src="/Carreira_Inclusiva/img/acessibilidade.png" alt="" id="acessibilidadeImg">
+                    <img src="{{ url_for('static', filename='img/acessibidade.png')}}" alt="" id="acessibilidadeImg">
                 </div>
 
                 <div class="acessibilidade">
                     <div class="acessibilidade_titulo">
                         <h1>Menu Acessibilidade(CTRL+U)</h1>
-                        <img src="/Carreira_Inclusiva/img/x.png" alt="" id="fecharImg"> 
+                        <img src="{{ url_for('static', filename='img/x.png')}}" alt="" id="fecharImg"> 
                     </div>
                     <div class="conteiner-menu_acessibilidade">
                         <div class="menu_acessibilidade">
                             <div class="grupo-menu_acessibilidade">
-                                <button onclick="linksDestacados()"><img src="/Carreira_Inclusiva/img/linkDestacado.png"> Links destacados</button>
-                                <button onclick="espaçamentoTexto()"><img src="/Carreira_Inclusiva/img/espacamentoTexto.png"> Espaçamento de texto</button>
-                                <button onclick="ocultarImagem()"><img src="/Carreira_Inclusiva/img/ocultarImagem.png"> Ocultar imagens</button>
-                                <button onclick="cursor()"><img src="/Carreira_Inclusiva/img/cursor.png">Cursor</button>
-                                <button onclick="alturaLinha()"><img src="/Carreira_Inclusiva/img/alturaLinha.png"> Altura da linha</button>
-                                <button onclick="saturacao()"><img src="/Carreira_Inclusiva/img/saturacao.png"> Saturação</button>
+                                <button onclick="linksDestacados()"><img src="{{ url_for('static', filename='img/linkDestacado.png')}}"> Links destacados</button>
+                                <button onclick="espaçamentoTexto()"><img src="{{ url_for('static', filename='img/espacamentoTexto.png')}}"> Espaçamento de texto</button>
+                                <button onclick="ocultarImagem()"><img src="{{ url_for('static', filename='img/ocultarImagem.png')}}"> Ocultar imagens</button>
+                                <button onclick="cursor()"><img src="{{ url_for('static', filename='img/cursor.png')}}">Cursor</button>
+                                <button onclick="alturaLinha()"><img src="{{ url_for('static', filename='img/alturaLinha.png')}}"> Altura da linha</button>
+                                <button onclick="saturacao()"><img src="{{ url_for('static', filename='img/saturacao.png')}}"> Saturação</button>
                             </div>
                             <div class="grupo-menu_acessibilidade">
-                                <button onclick="contraste()"><img src="/Carreira_Inclusiva/img/contraste.png"> Contraste +</button>
-                                <button onclick="aumentar_diminuir_texto()"><img src="/Carreira_Inclusiva/img/textoMaior.png"> Texto maior</button>
-                                <button onclick=pararAnimação()><img src="/Carreira_Inclusiva/img/pararAnimacao.png"> Parar animações</button>
-                                <button onclick=dislexiaAmigavel()><img src="/Carreira_Inclusiva/img/df.png"> Dislexia amigáel</button>
-                                <button onclick=barraFerramenta()><img src="/Carreira_Inclusiva/img/barraFerramentas.png"> Barra de ferramentas</button>
-                                <button onclick=alinhamentoTexto()><img src="/Carreira_Inclusiva/img/alinhamentoTexto.png"> Alinhamento do texto</button>
+                                <button onclick="contraste()"><img src="{{ url_for('static', filename='img/contraste.png')}}"> Contraste +</button>
+                                <button onclick="aumentar_diminuir_texto()"><img src="{{ url_for('static', filename='img/textoMaior.png')}}"> Texto maior</button>
+                                <button onclick=pararAnimação()><img src="{{ url_for('static', filename='img/pararAnimacao.png')}}"> Parar animações</button>
+                                <button onclick=dislexiaAmigavel()><img src="{{ url_for('static', filename='img/df.png')}}"> Dislexia amigáel</button>
+                                <button onclick=barraFerramenta()><img src="{{ url_for('static', filename='img/barraFerramentas.png')}}"> Barra de ferramentas</button>
+                                <button onclick=alinhamentoTexto()><img src="{{ url_for('static', filename='img/alinhamentoTexto.png')}}.png"> Alinhamento do texto</button>
                             </div>
                         </div>
                         <div class="redefinir_acessibilidade">
@@ -149,6 +150,7 @@
                     </div>
                 </div>
 
+                <!--janela_Vlibras-->
                 <div vw class="enabled">
                     <div vw-access-button class="active"></div>
                     <div vw-plugin-wrapper>
@@ -167,15 +169,15 @@
             <div class="footer-content">
                 <p class="copyright"> © 2024 Copyright: Carreira Inclusiva</p>
                 <div class="social-logo">
-                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img class="img-icone" src="/Carreira_Inclusiva/img/logo-facebook.png" alt=""></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img class="img-icone" src="/Carreira_Inclusiva/img/logo-instagram.png" alt=""></a>
-                    <a href="https://br.linkedin.com/" target="_blank"><img class="img-icone" src="/Carreira_Inclusiva/img/logo-linkedin.png" alt=""></a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img class="img-icone" src="{{ url_for('static', filename='img/logo-facebook.png')}}" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="img-icone" src="{{ url_for('static', filename='img/logo-instagram.png')}}" alt=""></a>
+                    <a href="https://br.linkedin.com/" target="_blank"><img class="img-icone" src="{{ url_for('static', filename='img/logo-linkedin.png')}}" alt=""></a>
                 </div>
             </div>
          </footer>
 
-         <script src="/Carreira_Inclusiva/componentes/JS/menuAcessibilidade.js"></script>
-         <script src="/Carreira_Inclusiva/componentes/JS/refinaPesquisa.js"></script>
+         <script src="{{ url_for('static', filename='js/menuAcessibilidade.js')}}"></script>
+         <script src="{{ url_for('static', filename='js/refinaPesquisa.js')}}"></script>
 
     </body>
 </html>

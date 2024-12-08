@@ -6,11 +6,11 @@
         <!--autores do site-->
         <meta name="author" content="Tiago Lino e Vinícuis Garces"/>
         <!--palavras chaves ao realizar pesquisa para encontrar no site-->
-        <meta name="Kwywords" contente="Carreira, Inclusão, Vagas de Emprego"/>
+        <meta name="Kwywords" content="Carreira, Inclusão, Vagas de Emprego"/>
         <meta name="descreption" content="Site de vagas de emprego exluiva para pessoas com deficiência no Distrito Federal"/>
         
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
-        <link rel="stylesheet" href="/Carreira_Inclusiva/style/main.css">
+        <link rel="stylesheet" href="/Carreira_Inclusiva/static/css/main.css">
 
         <title>Carreira Inclusiva</title>
     </head>
@@ -19,53 +19,97 @@
             <div class="conteiner">
                 <img src="{{ url_for('static', filename='img/logo.png')}}" alt="" srcset="">
                 <h1 class = "logo">Carreira Inclusiva </h1>
-                <div class="botoes">
-                    <a href="login.html" target="_blank"><button type="submit" class="botao">Login</button></a>
-                    <a href="criar_conta.html"><button type="submit" class="botao">Cadastre-se</button></a>
+                <div class="menu_usuarios">
+                    <img src="{{ url_for('static', filename='img/logo_usuario.png')}}" alt="" srcset="">
+                    <!-- Exibe o primeiro nome do usuário -->
+                    <span>{{ nomeUsuario }}</span>
+                    <img class="seta_baixo" src="{{ url_for('static', filename='img/seta_baixo.png')}}" alt="" srcset="">
+                    <span class="separador">|</span>
+                    <a class="logout" href="#">Sair</a>
                 </div>
             </div>
 
             <div class="menu">
                 <nav>
-                    <a class="a-menu" href="index.html">Home</a>
+                    <a class="a-menu" href="#">Home</a>
                     <a class="a-menu" href="encontre_vagas.html">Encontre uma Vaga</a>
                     <a class="a-menu" href="gerar_alertas.html">Alertas de Vagas</a>
                     <a href="#">Mapa do Site</a>
                 </nav>
             </div>
-        </header> 
+        </header>
 
         <!--linha para separar os blocos-->
         <div class="linha"></div>
-        <!-- Seção de login -->
+
+        <main>
+            <div class="menu-pesquisa">
+                <div class="conteiner">
+                    <h2 class="tema">Plataforma que oferta vagas de emprego para pessoas com deficência</h2>
+                    
+                    <img src="{{ url_for('static', filename='img/imagem.png')}}" alt="" srcset="" class="borda-esquerda">
+                </div>
+                    <!-- Formulário de pesquisa de vagas -->
+                    <form action="encontre_vagas.html" method="get" target="_blank">
+                        <fieldset class="conteiner-bloco_pesquisa">
+                            <!-- Bloco de pesquisa -->
+                            <div class="bloco_pesquisa">
+                                <!-- Campo de pesquisa por palavra-chave -->
+                                <div class="tipo_pesquisa">
+                                    <label for="palavra chave">Pesquisar vagas por palavra chave</label>
+                                    <input id= "palavra chave" type="text" name="palavra chave" placeholder="Ex. Financeiro">
+                                </div>
+                                <!-- Campo de pesquisa por localização -->
+                                <div class="tipo_pesquisa">
+                                    <label for="localizacao">Pesquisar vagas por localização</label>
+                                    <input id= "localizacao" type="text" name="localizacao" placeholder="Ex.Taquatinga">
+                                </div>
+                                <div class="btn-pesquisa">
+                                    <!-- Botão de submissão da pesquisa -->
+                                    <button type="submit">PESQUISA</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+               
+             </div>
+        </main>
+        <!-- Seção  de cards-->
         <section>
-            <div class="sessao_login">
-                <div class="conteiner-login">
-                    <div class="card-login">
-                        <h2>Login</h2>
-                        <form class="login-form" action="login" method="post">
-                            <!-- Campo de entrada para email -->
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                            <!-- Campo de entrada para senha -->
-                            <label for="senha">Senha</label>
-                            <input type="password" id="senha" name="senha" required>
-                            <!-- Checkbox para manter conectado -->
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="remember" name="remember">
-                                <label for="remember">manter conectado</label>
-                            </div>
-                            <!-- Botão de submissão do formulário -->
-                            <button type="submit">LOGAR</button>
-                            <!-- Link para recuperação de senha -->
-                             <div class="forgot-password">
-                                <a href="#" >Esqueceu sua senha?</a>
-                            </div>
-                        </form>
+            <div class="conteiner">
+                <div class="card">
+                    <!-- Imagem dentro do card -->
+                    <img src="{{ url_for('static', filename='img/pesquisa.png')}}" alt="">
+                    <div class="card-content">
+                        <h3>Pesquisar vagas inclusivas</h3>
+                        <p>Pesquisar vagas disponíveis para pessoas com deficiência</p>
+                        <div class="botao-card">
+                            <a href="encontre_vagas.html"><button>PESQUISAR</button></a>
+                        </div>
                     </div>
                 </div>
-                
 
+                <div class="card">
+                    <img src="{{ url_for('static', filename='img/relatorio.png')}}" alt="">
+                    <div class="card-content">
+                        <h3>Gerar alertas de vagas</h3>
+                        <p>Cadastre-se e recebe por email vagas que masi combinam com o seu perfil</p>
+                        <div class="botao-card">
+                            <a href="gerar_alertas.html"><button>GERAR ALERTAS</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='img/cv.png')}}" alt="">
+                    <div class="card-content">
+                        <h3>Upload do currículo</h3>
+                        <p>Faça upload do seu currículo para combinar com as melhores vagas</p>
+                        <div class="botao-card">
+                            <a href="curriculo.html"><button>UPLOAD CV</button></a>
+                        </div>
+                    </div>
+                </div>
                 <!--Menu acessibilidade-->
                 <div class="img-interativa">
                     <img src="{{ url_for('static', filename='img/acessibilidade.png')}}" alt="" id="acessibilidadeImg">
@@ -74,7 +118,7 @@
                 <div class="acessibilidade">
                     <div class="acessibilidade_titulo">
                         <h1>Menu Acessibilidade(CTRL+U)</h1>
-                        <img src="{{ url_for('static', filename='img/x.png')}}" alt="" id="fecharImg"> 
+                        <img src="{{ url_for('static', filename='img/x.png')}}" alt="" id="fecharImg">
                     </div>
                     <div class="conteiner-menu_acessibilidade">
                         <div class="menu_acessibilidade">
@@ -116,9 +160,42 @@
             </div>
         </section>
 
+         <!--linha para separar os blocos-->
+         <div class="linha"></div>
+
+         <section id="empresa-inclusao">
+            <h2 class="titulo-empresa-inclusao">Algumas empresas comprometidas com a inclusão</h2>
+
+            <div class="conteiner-empresa">
+                    <div class="card-empresa-logo">
+                        <img src="" alt="">
+                        <div class="card-conteudo">
+                        </div>
+                    </div>
+                    <div class="card-empresa-logo">
+                        <img src="" alt="">
+                        <div class="card-conteudo">
+                        </div>
+                    </div>
+                    <div class="card-empresa-logo">
+                        <img src="" alt="">
+                        <div class="card-conteudo">
+                        </div>
+                    </div>
+                    <div class="card-empresa-logo">
+                        <img src="" alt="">
+                        <div class="card-conteudo">
+                        </div>
+                    </div>
+
+            </div>
+         </section>
+         <!-- Rodapé do site -->
          <footer class="footer">
             <div class="footer-content">
+                <!-- Texto de copyright -->
                 <p class="copyright"> © 2024 Copyright: Carreira Inclusiva</p>
+                <!-- Logos das redes sociais linkadas-->
                 <div class="social-logo">
                     <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img class="img-icone" src="{{ url_for('static', filename='img/logo-facebook.png')}}" alt=""></a>
                     <a href="https://www.instagram.com/" target="_blank"><img class="img-icone" src="{{ url_for('static', filename='img/logo-instagram.png')}}" alt=""></a>
@@ -126,9 +203,8 @@
                 </div>
             </div>
          </footer>
-
+         
          <script src="{{ url_for('static', filename='js/menuAcessibilidade.js')}}"></script>
-
 
     </body>
 </html>
