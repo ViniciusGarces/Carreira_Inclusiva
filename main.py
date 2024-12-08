@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import session
 import json
 import os
 
@@ -30,10 +31,12 @@ def salvar_usuarios(lista):
     with open(USUARIOS_FILE, 'w') as file:
         json.dump(lista, file, indent=4)
 
+#rota para a página inicial
 @app.route("/")
 def home():
     return render_template("index.html")
 
+#rota para a página de login
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -52,6 +55,7 @@ def login():
 
     return render_template("login.html")
 
+#rota para a página de cadastro
 @app.route("/cadastro", methods=['GET', 'POST'])
 def cadastro():
     if request.method == 'POST':
@@ -97,6 +101,23 @@ def cadastro():
         return redirect(url_for('login'))
 
     return render_template("criar_conta.html")
+
+#rota para a página de vagas
+@app.route("/encontre_vagas")
+def encontre_vagas():
+    return render_template("encontre_vagas.html")
+
+#rota para a página de alerta de vagas
+@app.route("/gerar_alertas")
+def gerar_alertas():
+    return render_template("gerar_alertas.html")
+
+# Rota para logout
+@app.route("/logout")
+def logout():
+    session.clear()  # Remove todas as informações da sessão
+    flash("Você saiu com sucesso!", "info")
+    return redirect(url_for('login'))
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -414,6 +414,9 @@ footer{
 }
 
 .menu_usuarios{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     position: absolute; /*Fixar a classe botoes na tela*/
     top: 6%; /*Posicionar os botoes no meio vertical*/
     right: 70px; /*Distância dos botoes da direita*/
@@ -426,6 +429,44 @@ footer{
 
 .menu_usuarios .seta_baixo{
     height: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f2f2f2;
+}
+
+.menu_usuarios.active .dropdown-menu {
+    display: block;
+}
+
+.menu_usuarios.active .seta_baixo {
+    transform: rotate(180deg);
 }
 
 /* Estilo para o separador */

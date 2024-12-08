@@ -27,9 +27,9 @@
 
             <div class="menu">
                 <nav>
-                    <a class="a-menu" href="index.html">Home</a>
-                    <a class="a-menu" href="encontre_vagas.html">Encontre uma Vaga</a>
-                    <a class="a-menu" href="gerar_alertas.html">Alertas de Vagas</a>
+                    <a class="a-menu" href="{{ url_for('home') }}">Home</a>
+                    <a class="a-menu" href="{{ url_for('encontre_vagas') }}">Encontre uma Vaga</a>
+                    <a class="a-menu" href="{{ url_for('gerar_alertas') }}">Alertas de Vagas</a>
                     <a href="#">Mapa do Site</a>
                 </nav>
             </div>
@@ -93,6 +93,7 @@
                             </div>
                             <button>CADASTRE-SE</button>
                         </form>
+
                     </div>
                 </div>
                 <!--Menu acessibilidade-->
