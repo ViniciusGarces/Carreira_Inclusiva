@@ -19,9 +19,20 @@
             <div class="conteiner">
                 <img src="{{ url_for('static', filename='img/logo.png')}}" alt="" srcset="">
                 <h1 class = "logo">Carreira Inclusiva </h1>
-                <div class="botoes">
-                    <a href="login.html"><button type="submit" class="botao">Login</button></a>
-                    <button type="submit" class="botao">Cadastre-se</button>
+                <div class="menu_usuarios">
+                    <img src="{{ url_for('static', filename='img/logo_usuario.png')}}" alt="" srcset="">
+                    <!-- Exibe o primeiro nome do usuário -->
+                    <span>{{ nomeUsuario }}</span>
+                    <img class="seta_baixo" src="{{ url_for('static', filename='img/seta_baixo.png')}}" alt="" srcset="">
+                    <span class="separador">|</span>
+                    <a class="logout" href="{{ url_for('logout') }}">Sair</a>
+
+                    <!-- Menu dropdown -->
+                    <div class="dropdown-menu">
+                        <a href="{{ url_for('curriculo') }}">Currículo</a>
+                        <a href="#">Suas Vagas</a>
+                        <a href="#">Sua Conta</a>
+                    </div>
                 </div>
             </div>
 
@@ -117,7 +128,7 @@
                     </div>
                     <!--Menu acessibilidade-->
                 <div class="img-interativa">
-                    <img src="{{ url_for('static', filename='img/acessibidade.png')}}" alt="" id="acessibilidadeImg">
+                    <img src="{{ url_for('static', filename='img/acessibilidade.png')}}" alt="" id="acessibilidadeImg">
                 </div>
 
                 <div class="acessibilidade">
@@ -178,6 +189,7 @@
 
          <script src="{{ url_for('static', filename='js/menuAcessibilidade.js')}}"></script>
          <script src="{{ url_for('static', filename='js/refinaPesquisa.js')}}"></script>
+         <script src="{{ url_for('static', filename='js/menuUsuario.js')}}"></script>
 
     </body>
 </html>

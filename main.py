@@ -46,9 +46,10 @@ def login():
 
         for usuario in usuarios:
             if email == usuario['email'] and senha == usuario['senha']:
-                 # Envia o nome (primeiro nome) para o template
-                primeiro_nome = usuario['nome'].split()[0]  # Pega o primeiro nome
-                return render_template("index_logado.html", nomeUsuario=primeiro_nome)
+                # Salva o primeiro nome do usuário na sessão
+                session['nomeUsuario'] = usuario['nome'].split()[0]  # Primeiro nome
+                flash(f"Bem-vindo, {session['nomeUsuario']}!", "success")
+                return redirect(url_for('index_logado'))
 
         flash("Usuário ou senha inválidos!", "danger")
         return redirect(url_for('login'))
@@ -102,15 +103,37 @@ def cadastro():
 
     return render_template("criar_conta.html")
 
+@app.route("/index_logado")
+def index_logado():
+    if 'nomeUsuario' not in session:  # Verifica se o usuário está logado
+        flash("Você precisa fazer login para acessar esta página.", "danger")
+        return redirect(url_for('login'))
+    return render_template("index_logado.html", nomeUsuario=session['nomeUsuario'])
+
 #rota para a página de vagas
 @app.route("/encontre_vagas")
 def encontre_vagas():
-    return render_template("encontre_vagas.html")
+    if 'nomeUsuario' not in session:  # Verifica se o usuário está logado
+        flash("Você precisa fazer login para acessar esta página.", "danger")
+        return redirect(url_for('login'))
+    
+    nome_usuario = session['nomeUsuario']  # Recupera o nome da sessão
+    return render_template("encontre_vagas.html", nomeUsuario=nome_usuario)
 
 #rota para a página de alerta de vagas
-@app.route("/gerar_alertas")
+@app.route("/gerar_alertas")    
 def gerar_alertas():
-    return render_template("gerar_alertas.html")
+    if 'nomeUsuario' not in session:  # Verifica se o usuário está logado
+        flash("Você precisa fazer login para acessar esta página.", "danger")
+        return redirect(url_for('login'))
+    
+    nome_usuario = session['nomeUsuario']  # Recupera o nome da sessão
+    return render_template("gerar_alertas.html", nomeUsuario=nome_usuario)
+
+#rota para a página de currículo
+@app.route("/curriculo")
+def curriculo():
+    return render_template("curriculo.html")
 
 # Rota para logout
 @app.route("/logout")
