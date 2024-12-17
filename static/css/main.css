@@ -158,12 +158,20 @@ header .logo{
     border: none; /*remover a borda padrã*/
     border-radius: 5px; /*arredondar os cantos*/
     padding: 10px;
+    cursor: pointer; /*alterar o cursor ao passar o mouse*/
 
     font-size: 20px; /*tamanho dos botoes*/
     width: 150px; /*largura dos botoes*/
     text-align: center; /*alinhamento central do texto*/
     margin: 5px; /*espaçamento entre os botoes*/
 }
+
+.botoes .botao:hover {
+    background-color: #0A4A6A; /* Altera a cor de fundo ao passar o mouse */
+    color: #f0f0f0; /* Altera a cor do texto ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+}
+
 /* Estilo para a classe menu */
 .menu{
     width: 100%;
@@ -173,14 +181,22 @@ header .logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 /* Estilo para os links dentro do nav dentro da classe menu */
 .menu nav a{
     text-decoration: none;
     color: white;
-    padding: 8px;
+    padding: 10px 20px;
     
 }
+
+.menu nav a:hover {
+    background-color: #0F729C; /* Altera a cor de fundo ao passar o mouse */
+    color: white; /* Altera a cor do texto ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+}
+
 /* Estilo para o elemento nav */
 nav{
     margin-left: 40px;
@@ -273,6 +289,7 @@ form{
     display: flex;
     gap: 10px;
 }
+
 
 .tipo_pesquisa label{
     font-size: 20px;
@@ -377,8 +394,22 @@ h3{
 .card-empresa-logo{
     width: 200px;
     height: 200px;
-    background-color: grey;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
+
+.card-empresa-logo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-empresa-logo:hover{
+    transform: scale(1.1); /* Aumenta o tamanho do card em 10% quando o mouse está sobre ele */
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);/* Adiciona uma sombra */
+}
+
 /* Estilo para o elemento footer */
 footer{
     background-color: white;
