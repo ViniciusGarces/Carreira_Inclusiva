@@ -135,6 +135,17 @@ def gerar_alertas():
 def curriculo():
     return render_template("curriculo.html")
 
+@app.route("/api/vagas")
+def api_vagas():
+    VAGAS_FILE = os.path.join(BASE_DIR, 'vagas', 'vagas.json')  # Caminho correto do arquivo JSON
+    try:
+        with open(VAGAS_FILE, 'r', encoding='utf-8') as file:
+            vagas = json.load(file)  # Carrega as vagas do arquivo JSON
+        return json.dumps(vagas), 200, {'Content-Type': 'application/json'}  # Retorna as vagas como JSON
+    except Exception as e:
+        return jsonify({"erro": "Não foi possível carregar as vagas."}), 500
+
+
 # Rota para logout
 @app.route("/logout")
 def logout():
