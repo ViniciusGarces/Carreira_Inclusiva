@@ -36,8 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
                             <img src="/static/img/${vaga.salario}" alt="Ícone de salario" class="info-icon">
                             ${vaga.tipo_salario}
                         </p>
-                        <p class="descricao>${vaga.descricao}</p>
+                        <p class="descricao">${vaga.descricao}</p>
                     </div>
+                    <button class="visualizar_vaga-btn">VISUALIZAR VAGA</button>
                 `;
                 conteinerVagas.appendChild(vagaDiv);
             });

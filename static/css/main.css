@@ -312,6 +312,14 @@ form{
     margin-top: 55px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza a transição */
+}
+
+.btn-pesquisa button:hover {
+    background-color: #0A4A6A; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+    color: white;
 }
 
 /* Estilo para o elemento section */
@@ -367,6 +375,13 @@ h3{
     height: 30px;
     border: none;
     border-radius: 30px;  
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza a transição */
+}
+
+.botao-card button:hover{
+    background-color: #0A4A6A; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
 }
 
 /* Estilo para o elemento com id empresa-inclusao */
@@ -874,7 +889,7 @@ section .encontre_vagas{
 }
 
 .vagas-content:hover{
-    transform: scale(1.1); /* Aumenta o tamanho do card em 10% quando o mouse está sobre ele */
+    transform: scale(1.07); /* Aumenta o tamanho do card em 10% quando o mouse está sobre ele */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao card */
 }
 
@@ -899,7 +914,7 @@ section .encontre_vagas{
     padding-left: 30px;
 }
 
-.vaga-info p {
+.info {
     margin: 5px 0; /* Ajuste conforme necessário */
     background-color: white;
     border-radius: 10px;
@@ -926,11 +941,38 @@ section .encontre_vagas{
     border-radius: 5px; /* Adiciona bordas arredondadas */
 }
 
-.descricao{
-    padding: 25px;
-    color: #666;
-    font-size: 15px;
+/* Estilos para a descrição */
+.descricao {
+    position: absolute; /* Posiciona a descrição de forma absoluta */
+    top: 170px; /* Alinha a descrição na mesma direção do título */
+    right: 20px; /* Ajuste conforme necessário para alinhar com a vaga-logo */
+    left: 20px; /* Ajuste conforme necessário para definir a margem esquerda */
+    width: calc(100% - 40px); /* Ajusta a largura para não sobrepor a vaga-logo */
+    text-align: justify; /* Justifica o texto */
+    color: black;
 }
+
+/* Estilos para o botão visualizar vaga */
+.visualizar_vaga-btn {
+    position: absolute; /* Posiciona o botão de forma absoluta */
+    top: 220px; /* Ajuste conforme necessário para alinhar com a vaga-logo */
+    right: 20px; /* Ajuste conforme necessário */
+    padding: 10px 20px;
+    background-color: white;
+    color: #0A4A6A;
+    border: 1px solid #0A4A6A;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.visualizar_vaga-btn:hover {
+    background-color: #0A4A6A;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 #gerar_alertas{
 

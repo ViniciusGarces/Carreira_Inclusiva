@@ -15,8 +15,8 @@
     },
 
     {
-        "titulo": "Analista de Segurança da Informação (Gestão de Vulnerabilidade)",
-        "empresa": "ISH Tecnologia",
+        "titulo": "Assistente de Estoque",
+        "empresa": "Grupo Elfa",
         "local": "local.png",       
         "localizacao": "Brasilía/DF",
         "contrato": "contrato.png",
@@ -24,7 +24,23 @@
         "escritorio": "escritorio.png",
         "tipo": "Presencial",
         "salario": "salario.png",
-        "tipo_salario": "A combinar",
-        "logo": "ish_logo.jpg"
+        "tipo_salario": "R$ 1920,86",
+        "logo": "grupo_elfa_logo.jpg",
+        "descricao": "Na Elfa, somos apaixonados pelo que fazemos. Acreditamos que desta maneira nos realizamos, contagiamos e motivamos todos que se relacionam c..."
+    },
+
+    {
+        "titulo": " CONSULTOR DE VENDAS",
+        "empresa": "Localiza Rente a Car",
+        "local": "local.png",       
+        "localizacao": "Guará/DF",
+        "contrato": "contrato.png",
+        "tipo_contrato": "CLT",
+        "escritorio": "escritorio.png",
+        "tipo": "Presencial",
+        "salario": "salario.png",
+        "tipo_salario": "R$ 2500,00 - R$ 30.000,00",
+        "logo": "localiza_rent.png",
+        "descricao": "LOCALIZA&amp;COEstar em constante evolução nos trouxe até aqui. Ao lado de talentos e habilidades múltiplas nos conectamos em busca da nossa..."
     }
 ]
