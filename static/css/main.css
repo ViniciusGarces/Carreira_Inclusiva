@@ -6,11 +6,61 @@ body {
     color: black;
 }
 
+/* Estilização global para contraste */
 body.contraste {
-    background-color: black;
-    color: red;
+    background-color: #121212;
+    color: #ffffff;
 }
 
+/* Afetar todas as seções de forma consistente */
+body.contraste div,
+body.contraste section,
+body.contraste header,
+body.contraste footer,
+body.contraste nav,
+body.contraste main,
+body.contraste aside {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+/* Remove bordas das divs no modo contraste */
+body.contraste div {
+    border: none !important;
+}
+
+/* Aplica fundo e cor de texto para sections no modo contraste */
+body.contraste section {
+    background-color: #292929 !important;
+    color: #ffffff !important;
+}
+
+/* Links com contraste */
+body.contraste a {
+    color: #bb86fc;
+}
+
+/* Botões com contraste */
+body.contraste button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* Imagens ajustadas para contraste */
+body.contraste img {
+    filter: brightness(0.8) contrast(1.2);
+}
+
+/* Cards, menus e outros blocos visuais */
+body.contraste .card,
+body.contraste .menu,
+body.contraste .menu_acessibilidade {
+    background-color: #292929;
+    color: #ffffff;
+    border: 1px solid #555;
+}
 
 .linksDestacados {
     background-color: yellow;
@@ -100,6 +150,17 @@ section{
     height: 100px;
   }
 
+  .grupo-menu_acessibilidade img{
+    height: 40px;
+  }
+
+  button .btn-texto {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
   .redefinir_acessibilidade {
     display: flex;
     justify-content: center; /* Centraliza o botão horizontalmente */
@@ -125,6 +186,12 @@ section{
 
 #pag-index{
 
+}
+
+/* Aplica fundo e cor de texto para conteiner-bloco_pesquisa no modo contraste */
+body.contraste .conteiner-bloco_pesquisa{
+    background-color: #292929 !important;
+    color: #ffffff !important;
 }
 
 /* Define o contêiner dentro do header como um contêiner flexível */

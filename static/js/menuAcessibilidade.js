@@ -19,16 +19,24 @@ document.getElementById('fecharImg').addEventListener('click', function() {
     document.querySelector('.acessibilidade').style.display = 'none';
 });
 
-// função para alterar o contraste da página
+// Função para ativar/desativar contraste
 function contraste() {
     document.body.classList.toggle('contraste');
 
+    // Salvar a preferência no localStorage
     if (document.body.classList.contains('contraste')) {
         localStorage.setItem('contraste', 'true');
     } else {
-        localStorage.removeItem('contraste', 'false');
+        localStorage.removeItem('contraste');
     }
 }
+
+// Aplicar o tema armazenado ao carregar a página
+window.addEventListener('load', () => {
+    if (localStorage.getItem('contraste') === 'true') {
+        document.body.classList.add('contraste');
+    }
+});
 
 let count = 0;
 // função para destacar os elementos linkaveis da página
