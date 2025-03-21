@@ -14,5 +14,13 @@
         "senha": "123456",
         "cargo_pretendido": "",
         "cep": ""
+    },
+    {
+        "nome": "Maria ",
+        "sobrenome": "Adelaide",
+        "email": "mariaadelaide@gmail.com",
+        "senha": "adelaide123456",
+        "cargo_pretendido": "",
+        "cep": ""
     }
 ]

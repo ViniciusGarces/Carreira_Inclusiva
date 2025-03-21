@@ -50,7 +50,7 @@ body.contraste button {
 
 /* Imagens ajustadas para contraste */
 body.contraste img {
-    filter: brightness(0.8) contrast(1.2);
+    filter: invert(1);
 }
 
 /* Cards, menus e outros blocos visuais */
@@ -346,6 +346,7 @@ form{
     display: flex;
     gap: 10px;
     margin-left: 40px;
+    margin-top: 5px;
 }
 
 /* Estilo para a classe grupo-form */
@@ -521,6 +522,18 @@ footer{
     width: 20px;
     height: 20px;
 }
+
+.img-interativa img {
+    background-color: white; /* Define um fundo branco */
+    padding: none; 
+    border-radius: 50px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.img-interativa img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem */
+}
+
 
 #pag-index_logado{
 
